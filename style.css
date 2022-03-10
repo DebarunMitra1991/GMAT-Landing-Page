@@ -108,7 +108,7 @@ h1 {
 .textfield-container {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
 }
 .thirdSection-sub-column {
   float: left;
@@ -302,7 +302,7 @@ h1 {
   display: none;
 }
 .checkbox {
-  padding: 0 7%;
+  padding: 0 25%;
   display: flex;
   background: #eeebff;
 }
@@ -369,7 +369,7 @@ input[type="checkbox" i] {
   color: #646363;
   font-size: 18px;
   padding: 10px;
-  margin: 30px 0px;
+  margin: 30px;
 }
 .thirdSection-title {
   font-style: normal;
