@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -47,8 +46,8 @@
     <script>
     localStorage.setItem("lp-form-submission", '');
         const urlParameters = new URLSearchParams(window.location.search);
-    // console.log(urlParameters)
-    // console.log(urlParameters.get('utm_source'))
+    console.log(urlParameters)
+    console.log(urlParameters.get('utm_source'))
         let utm_url, utm_source, utm_campaign, utm_medium, utm_device, utm_term
         utm_url = window.location.href;
         utm_source = urlParameters.get('utm_source');
@@ -115,13 +114,13 @@
         <h1 class="secondSection-title">Want to know more about how to prepare?</h1>
         <div class="textfield-container">
             <div class="formFields">
-                <input id="name" type="text" type="text" required placeholder="Name">
+                <input id="name" type="text" name="name" type="text" placeholder="Name" value="" required="" onchange="onChangeName()">
             </div>
             <div class="formFields">
-                <input id="email" type="text" type="email" required placeholder="Email">
+                <input id="email" type="email" placeholder="Email" name="email" value="" required="" onchange="onChangeEmail()">
             </div>
             <div class="formFields">
-                <input id="phone" type="text" type="text" required placeholder="Phone">
+                <input id="phone" type="tel" name="phone" placeholder="Phone" maxlength="10" pattern="[0-9]{10}" value="" required="" onchange="onChangePhone()">
             </div>
             <input type="hidden" name="MXHOrgCode" value="24696"><input type="hidden" name="MXHLandingPageId" value="4fbc6d47-9abe-11eb-95ea-02612e94b82c"><input type="hidden" name="MXHFormBehaviour" value="1"><input type="hidden" name="MXHOutputMessagePosition" value="0"><input type="hidden" name="MXHFormDataTransfer" value="0"><input type="hidden" name="MXHRedirectUrl" value="https://gmatprep.byjus.com/byjus-gmat-thank-you"><input type="hidden" name="MXHAsc" value="5"><input type="hidden" name="MXHFormName" value="FORM 0"><input type="hidden" name="MXHSecretKey" value=""><input type="hidden" name="MXHOutputMessagePosition" value="0">
             <input type="hidden" name="MXHOutputMessagePosition" value="0">
@@ -344,14 +343,14 @@
         <h1 class="secondSection-title">Want to know more about how to prepare?</h1>
         <div class="textfield-container">
             <div class="formFields">
-                <input id="name1" type="text" required placeholder="Name">
+                <input id="name1" type="text" placeholder="Name" name="name" value="" required="" onchange="onChangeName1()">
             </div>
 
             <div class="formFields">
-                <input id="email1" type="email" required placeholder="Email">
+                <input id="email1" type="email" placeholder="Email" name="email" value="" required="" onchange="onChangeEmail1()">
             </div>
             <div class="formFields">
-                <input id="phone1" type="tel" required placeholder="Phone">
+                <input id="phone1" type="tel" name="phone" placeholder="Phone" maxlength="10" pattern="[0-9]{10}" value="" required="" onchange="onChangePhone1()">
             </div>
         </div>
     </div>
