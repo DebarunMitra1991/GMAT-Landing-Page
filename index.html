@@ -114,8 +114,8 @@
         const urlConfig = {
           protocol: prodEnv ? `https` : `http`,
           host: prodEnv ? `gmatprep.byjus.com` : `127.0.0.1`,
-          port: `5500`,
-          path: `thankyou.html`,
+          port: prodEnv ? ``: `:5501`,
+          path: prodEnv ? `byjus-gmat-thank-you`: `thankyou.html`,
           queryParam: ``,
         };
 
@@ -123,7 +123,7 @@
 
         if (element) {
           let attriVal = ``,
-            url = `${urlConfig.protocol}://${urlConfig.host}:${urlConfig.port}/${urlConfig.path}`,
+            url = `${urlConfig.protocol}://${urlConfig.host}${urlConfig.port}/${urlConfig.path}`,
             phone = getElementVal(idObject[id].phone),
             name = getElementVal(idObject[id].name),
             email = getElementVal(idObject[id].email),
