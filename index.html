@@ -91,7 +91,11 @@
       };
 
       const onChangeEvent = (id) => {
-        const prodEnv = false,
+        const prodEnv =
+            location.hostname === `127.0.0.1` ||
+            location.hostname === `localhost`
+              ? false
+              : true,
           idObject = [
             {
               parent: `MXHRedirectUrl`,
