@@ -55,28 +55,29 @@
         utm_medium = urlParameters.get('utm_medium');
         utm_term = urlParameters.get('utm_term');
         utm_device = urlParameters.get('utm_device');
+
     function onChangePhone() {
-        document.getElementsByName("MXHRedirectUrl")[0].setAttribute("value", "https://debarunmitra1991.github.io/byjus-gmat-thank-you?phone=" + document.getElementById("phone").value + "&firstName=" + document.getElementById('name').value.split(' ')[0] + "&email="
+        document.getElementsByName("MXHRedirectUrl")[0].setAttribute("value", "http://127.0.0.1:5500/thankyou.html?phone=" + document.getElementById("phone").value + "&firstName=" + document.getElementById('name').value.split(' ')[0] + "&email="
         + document.getElementById('email').value + "&source=" + utm_source + "&campaign=" +utm_campaign + "&medium=" +utm_medium+ "&device=" +utm_device + "&term=" +utm_term +"&url=" + utm_url)
     }
     function onChangeName() {
-        document.getElementsByName("MXHRedirectUrl")[0].setAttribute("value", "https://debarunmitra1991.github.io/byjus-gmat-thank-you?phone=" + document.getElementById("phone").value + "&firstName=" + document.getElementById('name').value.split(' ')[0] + "&email="
+        document.getElementsByName("MXHRedirectUrl")[0].setAttribute("value", "http://127.0.0.1:5500/thankyou.html?phone=" + document.getElementById("phone").value + "&firstName=" + document.getElementById('name').value.split(' ')[0] + "&email="
         + document.getElementById('email').value + "&source=" +utm_source + "&campaign=" +utm_campaign + "&medium=" +utm_medium+ "&device=" +utm_device + "&term=" +utm_term +"&url=" + utm_url)
     }
     function onChangeEmail() {
-        document.getElementsByName("MXHRedirectUrl")[0].setAttribute("value", "https://debarunmitra1991.github.io/byjus-gmat-thank-you?phone=" + document.getElementById("phone").value + "&firstName=" + document.getElementById('name').value.split(' ')[0] + "&email="
+        document.getElementsByName("MXHRedirectUrl")[0].setAttribute("value", "http://127.0.0.1:5500/thankyou.html?phone=" + document.getElementById("phone").value + "&firstName=" + document.getElementById('name').value.split(' ')[0] + "&email="
         + document.getElementById('email').value + "&source=" +utm_source + "&campaign=" +utm_campaign + "&medium=" +utm_medium+ "&device=" +utm_device + "&term=" +utm_term +"&url=" + utm_url)
     }
     function onChangePhone1() {
-        document.getElementById("form2redirect").value="https://debarunmitra1991.github.io/byjus-gmat-thank-you?phone=" + document.getElementById("phone1").value + "&firstName=" + document.getElementById('name1').value.split(' ')[0] + "&email="
+        document.getElementById("form2redirect").value="http://127.0.0.1:5500/thankyou.html?phone=" + document.getElementById("phone1").value + "&firstName=" + document.getElementById('name1').value.split(' ')[0] + "&email="
         + document.getElementById('email1').value + "&source=" +utm_source + "&campaign=" +utm_campaign + "&medium=" +utm_medium+ "&device=" +utm_device + "&term=" +utm_term +"&url=" + utm_url
     }
     function onChangeName1() {
-        document.getElementById("form2redirect").value="https://debarunmitra1991.github.io/byjus-gmat-thank-you?phone=" + document.getElementById("phone1").value + "&firstName=" + document.getElementById('name1').value.split(' ')[0] + "&email="
+        document.getElementById("form2redirect").value="http://127.0.0.1:5500/thankyou.html?phone=" + document.getElementById("phone1").value + "&firstName=" + document.getElementById('name1').value.split(' ')[0] + "&email="
         + document.getElementById('email1').value + "&source=" +utm_source + "&campaign=" +utm_campaign + "&medium=" +utm_medium+ "&device=" +utm_device + "&term=" +utm_term +"&url=" + utm_url
     }
     function onChangeEmail1() {
-        document.getElementById("form2redirect").value="https://debarunmitra1991.github.io/byjus-gmat-thank-you?phone=" + document.getElementById("phone1").value + "&firstName=" + document.getElementById('name1').value.split(' ')[0] + "&email="
+        document.getElementById("form2redirect").value="http://127.0.0.1:5500/thankyou.html?phone=" + document.getElementById("phone1").value + "&firstName=" + document.getElementById('name1').value.split(' ')[0] + "&email="
         + document.getElementById('email1').value + "&source=" +utm_source + "&campaign=" +utm_campaign + "&medium=" +utm_medium+ "&device=" +utm_device + "&term=" +utm_term +"&url=" + utm_url
     }
     </script>
@@ -122,7 +123,7 @@
             <div class="formFields">
                 <input id="phone" type="tel" name="phone" placeholder="Phone" maxlength="10" pattern="[0-9]{10}" value="" required="" onchange="onChangePhone()">
             </div>
-            <input type="hidden" name="MXHOrgCode" value="24696"><input type="hidden" name="MXHLandingPageId" value="4fbc6d47-9abe-11eb-95ea-02612e94b82c"><input type="hidden" name="MXHFormBehaviour" value="1"><input type="hidden" name="MXHOutputMessagePosition" value="0"><input type="hidden" name="MXHFormDataTransfer" value="0"><input type="hidden" name="MXHRedirectUrl" value="https://debarunmitra1991.github.io/byjus-gmat-thank-you"><input type="hidden" name="MXHAsc" value="5"><input type="hidden" name="MXHFormName" value="FORM 0"><input type="hidden" name="MXHSecretKey" value=""><input type="hidden" name="MXHOutputMessagePosition" value="0">
+            <input type="hidden" name="MXHOrgCode" value="24696"><input type="hidden" name="MXHLandingPageId" value="4fbc6d47-9abe-11eb-95ea-02612e94b82c"><input type="hidden" name="MXHFormBehaviour" value="1"><input type="hidden" name="MXHOutputMessagePosition" value="0"><input type="hidden" name="MXHFormDataTransfer" value="0"><input type="hidden" name="MXHRedirectUrl" value="http://127.0.0.1:5500/thankyou.html"><input type="hidden" name="MXHAsc" value="5"><input type="hidden" name="MXHFormName" value="FORM 0"><input type="hidden" name="MXHSecretKey" value=""><input type="hidden" name="MXHOutputMessagePosition" value="0">
             <input type="hidden" name="MXHOutputMessagePosition" value="0">
         </div>
         <div class="start-button">
@@ -357,7 +358,7 @@
     <div class="checkbox">
         <input type="checkbox" name="checkbox" value="We shall connect with you on whatsApp to provide some free video lactures for
         prep.">
-        <input type="hidden" name="MXHOrgCode" value="24696"><input type="hidden" name="MXHLandingPageId" value="4fbc6d47-9abe-11eb-95ea-02612e94b82c"><input type="hidden" name="MXHFormBehaviour" value="1"><input type="hidden" name="MXHOutputMessagePosition" value="0"><input type="hidden" name="MXHFormDataTransfer" value="0"><input id ="form2redirect" type="hidden" name="MXHRedirectUrl" value="https://debarunmitra1991.github.io/byjus-gmat-thank-you"><input type="hidden" name="MXHAsc" value="5"><input type="hidden" name="MXHFormName" value="FORM 0"><input type="hidden" name="MXHSecretKey" value=""><input type="hidden" name="MXHOutputMessagePosition" value="0">
+        <input type="hidden" name="MXHOrgCode" value="24696"><input type="hidden" name="MXHLandingPageId" value="4fbc6d47-9abe-11eb-95ea-02612e94b82c"><input type="hidden" name="MXHFormBehaviour" value="1"><input type="hidden" name="MXHOutputMessagePosition" value="0"><input type="hidden" name="MXHFormDataTransfer" value="0"><input id ="form2redirect" type="hidden" name="MXHRedirectUrl" value="http://127.0.0.1:5500/thankyou.html"><input type="hidden" name="MXHAsc" value="5"><input type="hidden" name="MXHFormName" value="FORM 0"><input type="hidden" name="MXHSecretKey" value=""><input type="hidden" name="MXHOutputMessagePosition" value="0">
         <input type="hidden" name="MXHOutputMessagePosition" value="0">
         <label for="vehicle1"> We shall connect with you on whatsApp to provide some free video lactures for
             prep.</label><br>
