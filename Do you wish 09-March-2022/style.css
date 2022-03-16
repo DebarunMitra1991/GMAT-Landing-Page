@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,200&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header Byju's */
+
+.header {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.header img {
+  padding: 0 3px;
+}
+
+/* Banner Style */
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  /* height: 500px; */
+  background-color: #4f35f2;
+}
+
+/* .banner:nth-child(1) {
+  order: 3;
+}
+.banner:nth-child(2) {
+  order: 1;
+}
+.banner:nth-child(3) {
+  order: 1;
+} */
+
+.leftImage {
+  margin: 109px 0 43px 35px;
+}
+
+.middleText {
+  width: 728px;
+  color: #fff;
+  justify-content: center;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2.5rem;
+}
+
+.bold {
+  background-color: #fff;
+  font-size: 2.3rem;
+  color: #4f35f2;
+  font-weight: bold;
+  /* margin: -38px 130px 0 130px; */
+  width: 80%;
+  margin: -38px auto 0 auto;
+  padding: 5px 0;
+  border-radius: 5px;
+}
+
+.para1 {
+  margin-top: 100px;
+  font-size: 1.5rem;
+}
+
+.para2 {
+  font-size: 1.5rem;
+}
+
+.rightImage {
+  margin: 87px 77px 46px 0;
+}
+
+/* Information Style */
+
+.info-container {
+  text-align: center;
+  padding: 40px 0;
+}
+
+.info-container h1 {
+  color: #4f35f2;
+  font-size: 2.5rem;
+}
+
+.info-container h2 {
+  font-size: 2.5erm;
+  font-weight: 400;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  /* border: 2px solid #000; */
+  text-align: center;
+  padding: 20px 30px;
+  font-size: 1.2rem;
+  width: 25rem;
+}
+
+.card p:nth-child(2) {
+  font-weight: bold;
+}
+
+/* Testimonial style */
+
+.testimonial-container {
+  background-color: #eeebff;
+  text-align: center;
+}
+
+.heading1 {
+  background-color: #4f35f2;
+  width: 60rem;
+  font-size: 2rem;
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 0;
+  border-radius: 10px;
+  margin: 20px auto 0 auto;
+}
+
+.para3 {
+  font-size: 1.5rem;
+}
+
+.para4 {
+  font-size: 1.5rem;
+  margin-top: -15px;
+}
+
+.testimonial-card {
+  text-align: center;
+  background-color: #fff;
+  width: 60rem;
+  margin: 10px auto 20px auto;
+  box-shadow: 2px 2px 5px #00000099;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 30px;
+}
+
+.collage-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.collage-container img {
+  height: 60px;
+  margin: 0 20px;
+  justify-content: center;
+}
+
+.collage-para {
+    margin-top: -3px;
+    font-size: .6rem;
+    line-height: 2px;
+}
+
+.user-container {
+  display: flex;
+}
+
+.user-container img {
+  height: 80px;
+}
+
+.user-info {
+  text-align: start;
+  line-height: 3px;
+  margin-left: 20px;
+}
+
+.user-name {
+  color: #3e26da;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+hr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card-text {
+  font-size: 1rem;
+  padding: 80px 10px;
+  text-align: center;
+  line-height: 3px;
+  font-weight: bold;
+}
+
+/* Footer style */
+
+.footer {
+    background-color: #4f35f2;
+    text-align: center;
+    color: #fff;
+}
+
+/* Mobile view */
+
+@media (max-width: 1070px) {
+  .header {
+    height: 60px;
+    padding: 10px 0;
+  }
+
+  .header img {
+    height: 40px;
+  }
+
+  .banner {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .middleText {
+    order: -2;
+    width: 100%;
+  }
+
+  .heading {
+    font-size: 1.8rem;
+  }
+
+  .bold {
+    font-size: 1.8rem;
+    margin-top: -10px;
+  }
+
+  .para1 {
+    margin-top: 15px;
+  }
+
+  .para1,
+  .para2 {
+    font-size: 1rem;
+  }
+
+  .rightImage {
+    order: -1;
+    margin: 8px auto;
+  }
+
+  .rightImage img {
+    width: 230px;
+    height: 270px;
+  }
+
+  .leftImage {
+    margin: 8px auto;
+  }
+
+  .leftImage img {
+    width: 284px;
+    height: 230px;
+  }
+
+  .info-container {
+    padding: 10px 0;
+  }
+
+  .info-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .info-container h2 {
+    font-size: 0.5erm;
+    padding: 0 10px;
+  }
+
+  .card {
+    font-size: 1.5rem;
+  }
+
+  .heading1 {
+    width: 22rem;
+    font-size: 1rem;
+  }
+
+  .para3, .para4 {
+      font-size: 1rem;
+  }
+
+  .testimonial-card {
+    width: 90%;
+  }
+
+  .card-header {
+    flex-direction: column;
+  }
+
+  .collage-container {
+    order: -1;
+  }
+
+  .collage-container img {
+    height: 28px;
+    margin: 5px 0;
+  }
+
+  .user-container {
+    order: -2;
+    margin: 5px auto;
+  }
+
+  .user-container img {
+    height: 60px;
+  }
+
+  .para5,
+  .para6 {
+    font-size: 0.8rem;
+    line-height: 15px;
+  }
+}

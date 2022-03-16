@@ -1,0 +1,482 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+.logo-section {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+}
+
+.logo-section img {
+  padding-bottom: 5px;
+}
+
+.banner-section {
+  background-color: #4f35f2;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 61px;
+  justify-content: space-around;
+}
+
+.banner-left-section {
+  text-align: start;
+  line-height: 10px;
+  padding: 40px 0 0 51px;
+}
+
+.gmat-text {
+  width: 600px;
+  height: 216px;
+}
+
+.banner-text {
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.btn-text {
+  height: 60px;
+  margin-top: 5px;
+}
+
+.banner-right-section img {
+  /* width: 2rem; */
+  height: 18rem;
+  margin-top: 107px;
+}
+
+.info-section {
+  padding-top: 10px;
+  padding-bottom: 150px;
+  text-align: center;
+}
+
+.info-section-heading {
+  font-size: 2.5rem;
+  letter-spacing: 4px;
+  color: #787878;
+}
+
+.info-card-section {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  justify-content: space-around;
+}
+
+.info-card {
+  width: 350px;
+  border: 3px solid #eeebff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+.card-img {
+  padding: 30px;
+}
+
+.card-heading {
+  font-size: 1.5rem;
+  color: #787878;
+  font-weight: bold;
+}
+
+.info-card-text {
+  font-size: 1rem;
+  padding: 0 40px;
+}
+
+/* Testimonial section */
+
+.testimonial-section {
+  background-color: #eeebff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.testimonial-section-heading {
+  height: 130px;
+  padding: 25px 0;
+}
+
+.testimonial-card {
+  text-align: center;
+  background-color: #fff;
+  width: 60rem;
+  margin: 10px auto 20px auto;
+  box-shadow: 2px 2px 5px #00000099;
+}
+
+.card-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20px 30px;
+}
+
+.collage-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.collage-container img {
+  height: 60px;
+  margin: 0 20px;
+  justify-content: center;
+}
+
+.collage-para {
+  margin-top: -3px;
+  font-size: 0.6rem;
+  line-height: 2px;
+}
+
+.user-container {
+  display: flex;
+}
+
+.user-img {
+  height: 80px;
+}
+
+.name-img {
+  height: 50px;
+  margin: 10px 0 0 20px;
+}
+
+hr {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.card-text {
+  font-size: 1rem;
+  padding: 80px 10px;
+  text-align: center;
+}
+
+/* Prep section  */
+
+.prep-section {
+  background-color: #fff;
+  text-align: center;
+}
+
+.prep-section-heading {
+  color: #787878;
+  font-size: 3rem;
+}
+
+.prep-card-section {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  justify-content: space-around;
+  padding-bottom: 80px;
+}
+
+.prep-card {
+  width: 600px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  padding: 50px 0 25px 0;
+}
+.prep-card-img {
+  width: 100px;
+  height: 100px;
+}
+
+.prep-card-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4f35f2;
+}
+
+.prep-card-text {
+  height: 132px;
+  font-size: 1rem;
+}
+
+.prep-btn-text {
+  height: 68px;
+}
+
+/* Form Section */
+
+.form-section {
+  text-align: center;
+  background-color: #eeebff;
+  padding-bottom: 50px;
+}
+
+.form-section-heading {
+  font-size: 3rem;
+  color: #3e3c3c;
+  padding-top: 35px;
+}
+
+.form-section-para {
+  font-size: 1.5rem;
+  color: #3e3c3c;
+  margin-top: -30px;
+}
+
+.input-section {
+  display: flex;
+  justify-content: center;
+}
+
+.input-box {
+  width: 380px;
+  height: 50px;
+  border: 2px solid #3e3c3c;
+  font-size: 1.4rem;
+  padding-left: 20px;
+  margin: 2rem;
+}
+
+.radio-btn-heading {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #3e3c3c;
+}
+
+.radio-btn-container {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  margin: 0 30px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #3e3c3c;
+}
+
+.radio-dot {
+  width: 20px;
+  height: 20px;
+}
+
+.submit-btn {
+  margin-top: 30px;
+  height: 60px;
+  width: 318px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+  background-color: #4f35f2;
+  border: 4px solid #ffffff;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.footer-section {
+  background-color: #4f35f2;
+  text-align: center;
+  color: #fff;
+  padding: 1px 0;
+}
+
+@media (max-width: 1380px) {
+  .gmat-text {
+    width: 35rem;
+  }
+
+  .banner-right-section img {
+    width: 600px;
+  }
+}
+
+@media (max-width: 1070px) {
+  .logo-section {
+    height: 60px;
+  }
+
+  .logo-section img {
+    height: 3rem;
+    margin: 10px 0 10px 0;
+  }
+
+  .banner-section {
+    flex-direction: column;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  .banner-left-section {
+    order: -1;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .gmat-text {
+    width: 22rem;
+    height: 10rem;
+  }
+
+  .banner-text {
+    font-size: 0.9rem;
+  }
+
+  .btn-text {
+    height: 35px;
+    margin-top: 0px;
+  }
+
+  .banner-right-section {
+    order: -2;
+    text-align: center;
+  }
+
+  .banner-right-section img {
+    width: 20rem;
+    height: 10rem;
+    margin: 0;
+  }
+
+  .info-section {
+    padding-top: 5px;
+    padding-bottom: 30px;
+  }
+
+  .info-card {
+    height: 450px;
+  }
+
+  .info-section-heading {
+    font-size: 1.3rem;
+  }
+
+  .testimonial-section-heading {
+    width: 280px;
+    margin-top: 30px;
+    height: 50px;
+    padding: 0;
+  }
+
+  .testimonial-card {
+    width: 90%;
+  }
+
+  .card-header {
+    flex-direction: column;
+  }
+
+  .collage-container {
+    order: -1;
+  }
+
+  .collage-container img {
+    height: 28px;
+    margin: 5px 0;
+  }
+
+  .card-text {
+    padding: 20px 10px;
+    line-height: 3px;
+  }
+
+  .user-container {
+    order: -2;
+    margin: 5px auto;
+  }
+
+  .user-img {
+    height: 60px;
+  }
+
+  .name-img {
+    height: 40px;
+    margin: 10px 0 0 20px;
+  }
+
+  .para5 {
+    font-size: 0.7rem;
+    line-height: 20px;
+  }
+
+  .prep-section-heading {
+    font-size: 1.4rem;
+  }
+
+  .prep-card-section {
+    padding-bottom: 40px;
+  }
+
+  .prep-card {
+    width: 90%;
+    padding: 14px 5px;
+  }
+
+  .prep-card-img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .prep-card-heading {
+    font-size: 1.4rem;
+  }
+
+  .prep-card-text {
+    height: 80px;
+    font-size: 0.8rem;
+  }
+
+  .prep-btn-img {
+    /* width: 197px; */
+    height: 48px;
+  }
+
+  .form-section-heading {
+    font-size: 1.7rem;
+    padding-top: 20px;
+  }
+
+  .form-section-para {
+    font-size: 1.3rem;
+    color: #3e3c3c;
+    margin-top: -10px;
+  }
+
+  .input-section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-box {
+    width: 80%;
+    height: 50px;
+    margin: 15px auto;
+    border: 2px solid #3e3c3c;
+    font-size: 1.4rem;
+    padding-left: 20px;
+  }
+
+  .radio-btn-heading {
+    font-size: 1.3rem;
+    text-align: start;
+    margin-left: 10%;
+  }
+
+  .radio-btn-container {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+  }
+
+  label {
+    margin: 0 0 0 10%;
+    font-size: 1.1rem;
+    text-align: start;
+  }
+}

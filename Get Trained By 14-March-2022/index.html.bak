@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins"
+      rel="stylesheet"
+    />
+    <!-- <link rel="stylesheet" href="./style.css" /> -->
+    <style>
+      *{box-sizing:border-box}body{margin:0;padding:0;font-family:"Poppins"}.logo-section{width:100%;height:100px;text-align:center}.logo-section img{padding-bottom:5px}.banner-section{background-color:#4f35f2;display:flex;flex-direction:row;padding-bottom:61px;justify-content:space-around}.banner-left-section{text-align:start;line-height:10px;padding:40px 0 0 51px}.gmat-text{width:600px;height:216px}.banner-text{color:#fff;font-size:1.5rem}.btn-text{height:60px;margin-top:5px}.banner-right-section img{height:18rem;margin-top:107px}.info-section{padding-top:10px;padding-bottom:150px;text-align:center}.info-section-heading{font-size:2.5rem;letter-spacing:4px;color:#787878}.info-card-section{display:flex;flex-wrap:wrap;row-gap:25px;justify-content:space-around}.info-card{width:350px;border:3px solid #eeebff;box-shadow:0 4px 4px rgba(0,0,0,.25);border-radius:20px}.card-img{padding:30px}.card-heading{font-size:1.5rem;color:#787878;font-weight:700}.info-card-text{font-size:1rem;padding:0 40px}.testimonial-section{background-color:#eeebff;text-align:center;padding-bottom:40px}.testimonial-section-heading{height:130px;padding:25px 0}.testimonial-card{text-align:center;background-color:#fff;width:60rem;margin:10px auto 20px auto;box-shadow:2px 2px 5px #0009}.card-header{display:flex;flex-direction:row;justify-content:space-around;padding:20px 30px}.collage-container{display:flex;justify-content:space-around;align-items:center}.collage-container img{height:60px;margin:10px;justify-content:center}.collage-para{margin-top:-3px;font-size:.6rem;line-height:2px}.user-container{display:flex}.user-img{height:80px}.name-img{height:50px;margin:10px 0 0 20px}hr{width:90%;margin:0 auto}.card-text{font-size:1rem;padding:80px 10px;text-align:center}.prep-section{background-color:#fff;text-align:center}.prep-section-heading{color:#787878;font-size:3rem}.prep-card-section{display:flex;flex-wrap:wrap;row-gap:40px;justify-content:space-around;padding-bottom:80px}.prep-card{width:600px;text-align:center;box-shadow:0 4px 10px rgba(0,0,0,.25);padding:50px 0 25px 0}.prep-card-img{width:100px;height:100px}.prep-card-heading{font-size:2rem;font-weight:700;color:#4f35f2}.prep-card-text{height:132px;font-size:1rem}.prep-btn-text{height:68px}.form-section{text-align:center;background-color:#eeebff;padding-bottom:50px}.form-section-heading{font-size:3rem;color:#3e3c3c;padding-top:35px}.form-section-para{font-size:1.5rem;color:#3e3c3c;margin-top:-30px}.input-section{display:flex;justify-content:center}.input-box{width:380px;height:50px;border:2px solid #3e3c3c;font-size:1.4rem;padding-left:20px;margin:2rem}.radio-btn-heading{font-size:1.6rem;font-weight:700;color:#3e3c3c}.radio-btn-container{display:flex;justify-content:center}label{margin:0 30px;font-size:1.4rem;font-weight:500;color:#3e3c3c}.radio-dot{width:20px;height:20px}.submit-btn{margin-top:30px;height:60px;width:318px;font-size:1.5rem;font-weight:700;color:#fff;background-color:#4f35f2;border:4px solid #fff;box-shadow:0 8px 10px rgba(0,0,0,.2);border-radius:10px}.footer-section{background-color:#4f35f2;text-align:center;color:#fff;padding:1px 0}@media (max-width:1380px){.gmat-text{width:35rem}.banner-right-section img{width:600px}}@media (max-width:1070px){.logo-section{height:60px}.logo-section img{height:3rem;margin:10px 0 10px 0}.banner-section{flex-direction:column;padding:10px 0;margin:0}.banner-left-section{order:-1;text-align:center;padding:10px 0}.gmat-text{width:22rem;height:10rem}.banner-text{font-size:.9rem}.btn-text{height:35px;margin-top:0}.banner-right-section{order:-2;text-align:center}.banner-right-section img{width:20rem;height:10rem;margin:0}.info-section{padding-top:5px;padding-bottom:30px}.info-card{height:450px}.info-section-heading{font-size:1.3rem}.testimonial-section-heading{width:280px;margin-top:30px;height:50px;padding:0}.testimonial-card{width:90%}.card-header{flex-direction:column}.collage-container{order:-1}.collage-container img{height:28px;margin:5px 0}.card-text{padding:20px 10px;line-height:3px}.user-container{order:-2;margin:5px auto}.user-img{height:60px}.name-img{height:40px;margin:10px 0 0 20px}.para5{font-size:.7rem;line-height:20px}.prep-section-heading{font-size:1.4rem}.prep-card-section{padding-bottom:40px}.prep-card{width:90%;padding:14px 5px}.prep-card-img{width:40px;height:40px}.prep-card-heading{font-size:1.4rem}.prep-card-text{height:80px;font-size:.8rem}.prep-btn-img{height:48px}.form-section-heading{font-size:1.7rem;padding-top:20px}.form-section-para{font-size:1.3rem;color:#3e3c3c;margin-top:-10px}.input-section{display:flex;flex-direction:column}.input-box{width:80%;height:50px;margin:15px auto;border:2px solid #3e3c3c;font-size:1.4rem;padding-left:20px}.radio-btn-heading{font-size:1.3rem;text-align:start;margin-left:10%}.radio-btn-container{display:flex;justify-content:start;flex-direction:column}label{margin:0 0 0 10%;font-size:1.1rem;text-align:start}}
+    </style>
+     <!-- Global site tag (gtag.js) - Google Ads: 723316378 -->
+     <script
+     async=""
+     src="https://www.googletagmanager.com/gtag/js?id=AW-723316378"
+   ></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag() {
+       dataLayer.push(arguments);
+     }
+     gtag("set", "linker", {
+       domains: ["gmatprep.byjus.com", "thecareerlabs.com"],
+     });
+     gtag("js", new Date());
+     gtag("config", "AW-723316378");
+   </script>
+   <!-- Event snippet for Button Click Lead Submission conversion page -->
+   <script>
+     function gtag_report_conversion(url) {
+       var callback = function () {
+         if (typeof url != "undefined") {
+           window.location = url;
+         }
+       };
+       console.log("lead");
+       gtag("event", "conversion", {
+         send_to: "AW-723316378/qDRVCIvX5ocCEJrd89gC",
+         event_callback: callback,
+       });
+       return false;
+     }
+   </script>
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+   <script
+     async=""
+     src="https://www.googletagmanager.com/gtag/js?id=UA-141893014-1"
+   ></script>
+   <script>
+     window.dataLayer = window.dataLayer || [];
+     function gtag() {
+       dataLayer.push(arguments);
+     }
+     gtag("js", new Date());
+
+     gtag("config", "UA-141893014-1");
+   </script>
+   <!-- auto-populate details -->
+   <!--<script>
+    localStorage.setItem("lp-form-submission", "");
+    const urlParameters = new URLSearchParams(window.location.search);
+    console.log(urlParameters);
+    console.log(urlParameters.get("utm_source"));
+    let utm_url, utm_source, utm_campaign, utm_medium, utm_device, utm_term;
+    utm_url = window.location.href;
+    utm_source = urlParameters.get("utm_source");
+    utm_campaign = urlParameters.get("utm_campaign");
+    utm_medium = urlParameters.get("utm_medium");
+    utm_term = urlParameters.get("utm_term");
+    utm_device = urlParameters.get("utm_device");
+
+    const getElementVal = (id) => {
+      let retrunVal = ``;
+      if (!id) return retrunVal;
+
+      const element = document.getElementById(id);
+      if (element) {
+        retrunVal = element.value;
+
+        if (id === `name` || id === `name1`)
+          retrunVal = retrunVal.split(" ")[0];
+      }
+      return retrunVal;
+    };
+
+    const onChangeEvent = (id) => {
+      const prodEnv =true,
+        idObject = [
+          {
+            parent: `MXHRedirectUrl`,
+            phone: `phone`,
+            name: `name`,
+            email: `email`,
+          },
+          {
+            parent: `form2redirect`,
+            phone: `phone1`,
+            name: `name1`,
+            email: `email1`,
+          },
+        ];
+
+      const urlConfig = {
+        protocol: prodEnv ? `https` : `http`,
+        host: prodEnv ? `gmatprep.byjus.com` : `127.0.0.1`,
+        port: prodEnv ? ``: `:5501`,
+        path: prodEnv ? `byjus-gmat-thank-you`: `thankyou.html`,
+        queryParam: ``,
+      };
+
+      const element = document.getElementsByName(idObject[id].parent)[0];
+
+      if (element) {
+        let attriVal = ``,
+          url = `${urlConfig.protocol}://${urlConfig.host}${urlConfig.port}/${urlConfig.path}`,
+          phone = getElementVal(idObject[id].phone),
+          name = getElementVal(idObject[id].name),
+          email = getElementVal(idObject[id].email),
+          queryParam = `?${phone ? `phone=${phone}` : ``}${
+            name ? `&firstName=${name}` : ``
+          }${email ? `&email=${email}` : ``}${
+            utm_source ? `&source=${utm_source}` : ``
+          }${utm_campaign ? `&campaign=${utm_campaign}` : ``}${
+            utm_medium ? `&medium=${utm_medium}` : ``
+          }${utm_device ? `&device=${utm_device}` : ``}${
+            utm_term ? `&term=${utm_term}` : ``
+          }${utm_url ? `&url=${utm_url}` : ``}`;
+
+        attriVal = `${url}${queryParam}`;
+        element.setAttribute(`value`, attriVal);
+      }
+    };
+  </script> -->
+   <script>
+    localStorage.setItem("lp-form-submission", '');
+    const urlParameters = new URLSearchParams(window.location.search);
+    console.log(urlParameters)
+    console.log(urlParameters.get('utm_source'))
+        let utm_url, utm_source, utm_campaign, utm_medium, utm_device, utm_term
+        utm_url = window.location.href;
+        utm_source = urlParameters.get('utm_source');
+        utm_campaign = urlParameters.get('utm_campaign');
+        utm_medium = urlParameters.get('utm_medium');
+        utm_term = urlParameters.get('utm_term');
+        utm_device = urlParameters.get('utm_device');
+    function onChangePhone() {
+        document.getElementsByName("MXHRedirectUrl")[0].setAttribute("value", "https://gmatprep.byjus.com/byjus-gmat-thank-you?phone=" + document.getElementById("phone").value + "&firstName=" + document.getElementById('name').value.split(' ')[0] + "&email="
+        + document.getElementById('email').value + "&source=" + utm_source + "&campaign=" +utm_campaign + "&medium=" +utm_medium+ "&device=" +utm_device + "&term=" +utm_term +"&url=" + utm_url)
+    }
+    function onChangeName() {
+        document.getElementsByName("MXHRedirectUrl")[0].setAttribute("value", "https://gmatprep.byjus.com/byjus-gmat-thank-you?phone=" + document.getElementById("phone").value + "&firstName=" + document.getElementById('name').value.split(' ')[0] + "&email="
+        + document.getElementById('email').value + "&source=" +utm_source + "&campaign=" +utm_campaign + "&medium=" +utm_medium+ "&device=" +utm_device + "&term=" +utm_term +"&url=" + utm_url)
+    }
+    function onChangeEmail() {
+        document.getElementsByName("MXHRedirectUrl")[0].setAttribute("value", "https://gmatprep.byjus.com/byjus-gmat-thank-you?phone=" + document.getElementById("phone").value + "&firstName=" + document.getElementById('name').value.split(' ')[0] + "&email="
+        + document.getElementById('email').value + "&source=" +utm_source + "&campaign=" +utm_campaign + "&medium=" +utm_medium+ "&device=" +utm_device + "&term=" +utm_term +"&url=" + utm_url)
+    }
+    </script>
+    <title>GMAT Prep</title>
+  </head>
+  <body>
+    <div class="logo-section">
+      <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/CareerLabsLogo.png" alt="" />
+    </div>
+
+    <div class="banner-section">
+      <div class="banner-left-section">
+        <img class="gmat-text" lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/GetTrained.png" alt="" />
+        <p class="banner-text">Structured Preparation with Flip Class Model</p>
+        <p class="banner-text">in a Tablet, Proven Techniques, and GMAT</p>
+        <p class="banner-text">Mock Test Papers.</p>
+        <a href="#gmatStartPrep"><img class="btn-text" lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/StartPrepBtn.png" alt="" /></a>
+      </div>
+      <div class="banner-right-section">
+        <a href="#gmatStartPrep"><img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/WantToGet.png" alt="" /></a>
+      </div>
+    </div>
+
+    <div class="info-section">
+      <h1 class="info-section-heading">Why Prepare with BYJU’S?</h1>
+      <div class="info-card-section">
+        <div class="info-card">
+          <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/ByjusTraining.png" alt="#" class="card-img" />
+          <p class="card-heading">Structured Preparation</p>
+          <p class="info-card-text">
+            Online + Offline Learning via Flip Class model with On-Demand Doubt
+            Clearing & Unlimited Mentoring
+          </p>
+        </div>
+        <div class="info-card">
+          <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/ByjusInterview.png" alt="#" class="card-img" />
+          <p class="card-heading">Effective Conceptual Understanding</p>
+          <p class="info-card-text">
+            150+ Hours of Video Lectures, 50+ Hours of Flip Class Lectures,
+            3500+ Practice Questions and 14 Mock GMAT Test Papers understand
+            every complex concept easily.
+          </p>
+        </div>
+        <div class="info-card">
+          <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/ByjusVote.png" alt="#" class="card-img" />
+          <p class="card-heading">Get GMAT-ready</p>
+          <p class="info-card-text">
+            Diagnostic Toolkit Software to discover your weaknesses and fix them
+            with expert guidance.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonial-section">
+      <img
+        lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/OurProud.png"
+        alt=""
+        class="testimonial-section-heading"
+      />
+
+      <div class="testimonial-card">
+        <div class="card-header">
+          <div class="collage-container">
+            <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/Symbiosis.png" alt="#" />
+            <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/rightArrow.png" alt="#" />
+            <img
+              lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/NorthwesternUniversity.png"
+              alt="#"
+            />
+          </div>
+          <div class="user-container">
+            <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/siddharth.png" alt="" class="user-img" />
+            <img
+              lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/Siddharth R GMAT 720.png"
+              alt=""
+              class="name-img"
+            />
+          </div>
+        </div>
+        <hr />
+        <div class="card-text">
+          <p class="para5">
+            “Careerlabs gave me great suggestions and advice on
+            <br />
+            showcasing my profile for B-School applications”
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="card-header">
+          <div class="collage-container">
+            <div>
+              <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/IIT_Kharagpur.png" alt="#" />
+              <p class="collage-para">Indian Institute of</p>
+              <p class="collage-para">Technology Kharagpur</p>
+            </div>
+            <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/rightArrow.png" alt="#" />
+            <img
+              lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/Indian_School_of_Business.png"
+              alt="#"
+            />
+          </div>
+          <div class="user-container">
+            <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/Mohit.png" alt="" class="user-img" />
+            <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/Mohit V GMAT 720.png" alt="" class="name-img" />
+          </div>
+        </div>
+        <hr />
+        <div class="card-text">
+          <p class="para5">
+            “They actively follow up so that I am on track.
+            <br />
+            They were very professional and prompt with their response”
+          </p>
+        </div>
+      </div>
+
+      <div class="testimonial-card">
+        <div class="card-header">
+          <div class="collage-container">
+            <div>
+              <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/IITJodhpur.png" alt="#" />
+              <p class="collage-para">Indian Institute of</p>
+              <p class="collage-para">Technology Jodhpur</p>
+            </div>
+            <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/rightArrow.png" alt="#" />
+            <img
+              lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/Kellogg_School_of_Management.png"
+              alt="#"
+            />
+          </div>
+          <div class="user-container">
+            <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/Pranjal.png" alt="" class="user-img" />
+            <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/Pranjal GMAT 770.png" alt="" class="name-img" />
+          </div>
+        </div>
+        <hr />
+        <div class="card-text">
+          <p class="para5">
+            “ GMAT, ACS services were far beyond my expectations,
+            <br />
+            helped in narrowing down my choices of B-Schools ”
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="prep-section">
+      <h1 class="prep-section-heading">
+        Prepare effectively with our <br />
+        GMAT Program!
+      </h1>
+
+      <div class="prep-card-section">
+        <div class="prep-card">
+          <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/GMATtablet.png" alt="" class="prep-card-img" />
+          <p class="prep-card-heading">
+            CONCRETE YOUR CONCEPTUAL UNDERSTANDING
+          </p>
+          <p class="prep-card-text">
+            Get the benefit of Online (Quant & Verbal Video <br />
+            Lectures in a Tablet) +Offline Learning (Live <br />
+            Webinars & Doubt Clearing sessions) to solidify <br />
+            your concepts.
+          </p>
+          <a href="#gmatStartPrep"><img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/GMATLearnNow.png" alt="" class="prep-btn-img" /></a>
+        </div>
+
+        <div class="prep-card">
+          <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/GMATquestion.png" alt="" class="prep-card-img" />
+          <p class="prep-card-heading">
+            PRACTICE TO YOUR <br />
+            SATISFACTION
+          </p>
+          <p class="prep-card-text">
+            With access to 3500+ Practice Questions and 14 <br />
+            Mock GMAT Test Papers, make your practice <br />
+            sessions worthy.
+          </p>
+          <a href="#gmatStartPrep"><img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/GMATStartYour.png" alt="" class="prep-btn-img" /></a>
+        </div>
+
+        <div class="prep-card">
+          <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/GMATsuccess.png" alt="" class="prep-card-img" />
+          <p class="prep-card-heading">
+            KNOW YOUR WEAKNESS - <br />
+            OVERCOME THEM
+          </p>
+          <p class="prep-card-text">
+            Our AI-based Diagnostic Toolkit Software spots <br />
+            your weaknesses and gives real-time guidance to <br />
+            fix them
+          </p>
+          <a href="#gmatStartPrep"><img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/GMATImproveYour.png" alt="" class="prep-btn-img" /></a>
+        </div>
+
+        <div class="prep-card">
+          <img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/GMATshare.png" alt="" class="prep-card-img" />
+          <p class="prep-card-heading">
+            WE LOVE SHORTCUTS,<br />
+            DON’T WE?
+          </p>
+          <p class="prep-card-text">
+            That’s why we came up with Mathematical <br />
+            Shortcuts to solve RC, Reverse Engineering to <br />
+            solve SC, un-layering technique to CR and <br />
+            Translation technique to Math
+          </p>
+          <a href="#gmatStartPrep"><img lazy="loading" src="https://dsxfv1fxcymhz.cloudfront.net/GMAT/get-trained-14-03-2022/GMATStartYourPrepNow.png" alt="" class="prep-btn-img" /></a>
+        </div>
+      </div>
+    </div>
+    <div id="gmatStartPrep" class="form-section">
+      <h1 class="form-section-heading">What are you waiting for?</h1>
+      <p class="form-section-para">Register now and stay ahead!</p>
+      <form
+      class="form"
+      id="reg-form"
+      name="FORM 0"
+      method="post"
+      enctype="multipart/form-data"
+      action="https://web-in21.mxradon.com/t/FormTracker.aspx"
+      onsubmit="handleOnSubmit(event); gtag_report_conversion();"
+    >
+      <h1 class="secondSection-title">
+        Want to know more about how to prepare?
+      </h1>
+      <div class="input-section">
+          <input
+            id="name"
+            class="input-box"
+            type="text"
+            name="name"
+            type="text"
+            placeholder="Name"
+            value=""
+            required=""
+            onchange="onChangeName()"
+          />
+          <input
+            id="email"
+            class="input-box"
+            type="email"
+            placeholder="Email"
+            name="email"
+            value=""
+            required=""
+            onchange="onChangeEmail()"
+          />
+        <div class="formFields">
+          <input
+            id="phone"
+            class="input-box"
+            type="tel"
+            name="phone"
+            placeholder="Phone"
+            maxlength="10"
+            pattern="[0-9]{10}"
+            value=""
+            required=""
+            onchange="onChangePhone()"
+          />
+        </div>
+        <input type="hidden" name="MXHOrgCode" value="24696" /><input
+          type="hidden"
+          name="MXHLandingPageId"
+          value="4fbc6d47-9abe-11eb-95ea-02612e94b82c"
+        /><input type="hidden" name="MXHFormBehaviour" value="1" /><input
+          type="hidden"
+          name="MXHOutputMessagePosition"
+          value="0"
+        /><input type="hidden" name="MXHFormDataTransfer" value="0" /><input
+          type="hidden"
+          name="MXHRedirectUrl"
+          value="https://gmatprep.byjus.com/byjus-gmat-thank-you"
+        /><input type="hidden" name="MXHAsc" value="5" /><input
+          type="hidden"
+          name="MXHFormName"
+          value="FORM 0"
+        /><input type="hidden" name="MXHSecretKey" value="" /><input
+          type="hidden"
+          name="MXHOutputMessagePosition"
+          value="0"
+        />
+        <input type="hidden" name="MXHOutputMessagePosition" value="0" />
+      </div>
+      <p class="radio-btn-heading">GMAT Attempt:</p>
+        <div class="radio-btn-container">
+          <label for="">
+            <input type="radio" name="firstTimeGmat" id="firstTimeGmat" class="radio-dot" value="First Time GMAT" onclick="handleSelect(event);"/>
+            I’m taking GMAT for the first time
+          </label>
+          <label for="">
+            <input type="radio" name="retakeGmat" id="retakeGmat" class="radio-dot" value="Retaking GMAT" onclick="handleSelect(event);"/>
+            I’m retaking the GMAT
+          </label>
+        </div>
+        <input type="submit" value="Start My Prep" class="submit-btn" />
+    </form>
+    </div>
+
+    <div class="footer-section">
+      <p class="form-section-text">© 2022 CareerLabs Technologies Pvt Ltd</p>
+    </div>
+    <script>
+      function checkPhone(value) {
+        let phoneNum =
+          /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+        return value.match(phoneNum);
+      }
+      function isEmailAddress(str) {
+        let pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        return pattern.test(str);
+      }
+      function isName(str) {
+        let pattern = /^[a-zA-z]+([\s][a-zA-Z]+)*$/;
+        return pattern.test(str);
+      }
+      function handleSelect(e){
+        e.target['id']==="firstTimeGmat"?
+          document.getElementById("retakeGmat").checked=false :
+          document.getElementById("firstTimeGmat").checked=false
+      }
+      function handleOnSubmit(e) {
+        //e.preventDefault();
+        const urlParams = new URLSearchParams(window.location.search);
+        let url, source, campaign, medium, device, term, name, email, phone,gmatAppearingStatus;
+        url = window.location.href;
+        source = urlParams.get("utm_source");
+        campaign = urlParams.get("utm_campaign");
+        medium = urlParams.get("utm_medium");
+        term = urlParams.get("utm_term");
+        device = urlParams.get("utm_device");
+        name = document.getElementById("name");
+        email = document.getElementById("email");
+        phone = document.getElementById("phone");
+        gmatAppearingStatus = "Interested In GMAT";
+        if(document.getElementById("firstTimeGmat").checked){
+          gmatAppearingStatus = "First Time GMAT";
+        }else if(document.getElementById("retakeGmat").checked){
+          gmatAppearingStatus = "Retaking GMAT";
+        }
+        const data = {
+          account: "GMAT",
+          firstName: name.value.split(" ")[0],
+          lastName:
+            name.value.split(" ")[1] !== undefined
+              ? name.value.split(" ")[1]
+              : "",
+          email: email.value,
+          phone: phone.value,
+          pageCode: "255",
+          source: source,
+          sourceCode: campaign,
+          website: url,
+          sourceMedium: medium,
+          device: device,
+          term: term,
+          eventMsg: `**[${gmatAppearingStatus}] ${name.value.split(" ")[0]} registered from ${url} Website.`,
+        };
+        console.log(data);
+        document.getElementsByClassName("submit-btn")[0].value = "Loading...";
+        document.getElementsByClassName("submit-btn")[0].disabled = true;
+        fetch("https://careerwizard.thecareerlabs.com/ls/api/v1/registration", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        }).then((response) => {
+            // console.log(response);
+          localStorage.setItem("lp-form-submission", "success");
+          document.getElementsByClassName("submit-btn")[0].value = "Start My Prep";
+          document.getElementsByClassName("submit-btn")[0].disabled = false;
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+        fetch(
+          "https://careerwizard.thecareerlabs.com/verloop/Campaign/SendMessage",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              CampaignID: "b58158c1-19d7-47bb-b325-7b03c6583a45",
+              PhoneNumber: `91${data.phone}`,
+            }),
+          }
+        )
+          .then((response) => {
+            // console.log(response)
+          })
+          .catch((error) => {
+            // console.error("Error:", error);
+          });
+      }
+    </script>
+  </body>
+</html>
