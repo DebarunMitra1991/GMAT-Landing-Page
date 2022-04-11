@@ -1,0 +1,1595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index,follow" />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" as="style">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="./full-stack-style.css" /> -->
+  <title>Assured Placement</title>
+  <!-- Facebook Pixel Code -->
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+      n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2629680710613698');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2629680710613698&ev=PageView&noscript=1" /></noscript>
+  <!-- End Facebook Pixel Code -->
+  <!-- Global site tag (gtag.js) - Google Ads: 723316378 -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-723316378"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('set', 'linker', {
+      domains: ['greprep.byjus.com', 'thecareerlabs.com'],
+    });
+    gtag('js', new Date());
+    gtag('config', 'AW-723316378');
+  </script>
+  <!-- Event snippet for Button Click Lead Submission conversion page -->
+  <script> function gtag_report_conversion(url) {
+      var callback = function () {
+        if (typeof (url) != 'undefined') { window.location = url; }
+      };
+      console.log('lead')
+      gtag('event', 'conversion', { 'send_to': 'AW-723316378/qDRVCIvX5ocCEJrd89gC', 'event_callback': callback });
+      return false;
+    }</script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-141893014-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-141893014-1');
+  </script>
+  <style>
+    .program-details-hide {
+      display: none;
+    }
+
+    .program-details {
+      display: block;
+    }
+  </style>
+  <script>
+    function markTheClick(e) {
+      let idNumber = e.target.id.split('-')[1]
+      for (let i = 1; i <= 3; i++) {
+        let menuId = 'program-' + i,
+          imageSectionId = 'program-set-' + i;
+        document.getElementById(menuId).className = '';
+        document.getElementById(imageSectionId).className = 'program-details-hide';
+      }
+      document.getElementById(e.target.id).className = 'active';
+      document.getElementById('program-set-' + idNumber).className = 'program-details';
+    };
+  </script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: Montserrat;
+    }
+
+    .container {
+      padding: 3.75rem 8.25rem;
+    }
+
+    .banner {
+      background-image: url("https://dsxfv1fxcymhz.cloudfront.net/nov/background-web.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      padding-bottom: 0rem;
+    }
+
+    .careerlabs-logo {
+      text-align: center;
+    }
+
+    .banner-content {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 5rem;
+    }
+
+    .banner-content-1 p:first-child,
+    .banner-content-1 p:nth-child(2) {
+      font-weight: 600;
+      line-height: 68px;
+    }
+
+    .banner-content-1 p:first-child {
+      font-size: 40px;
+      color: white;
+    }
+
+    .banner-content-1 p:nth-child(2) {
+      font-size: 50px;
+      color: yellow;
+    }
+
+    .banner-content-1 p:nth-child(3) {
+      margin-top: 2rem;
+      font-size: 20px;
+      line-height: 170%;
+      color: white;
+    }
+
+    .curvy-container {
+      margin-top: 3rem;
+    }
+
+    .eligibility {
+      height: 5rem;
+      background-color: #0f7dda;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1rem;
+      line-height: 150%;
+    }
+
+    .eligibility p:nth-child(2) {
+      color: #FFBC01;
+      margin-right: 0.5rem;
+      margin-left: 0.5rem;
+    }
+
+    .eligibility p:nth-child(3) {
+      color: white;
+    }
+
+    .register {
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+      text-align: center;
+    }
+
+    .register p {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39px;
+      color: #052A4E;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+
+    form input {
+      width: 34.5%;
+      height: 2rem;
+      margin-right: 0.5rem;
+      margin-bottom: 2rem;
+      padding-left: 1rem;
+    }
+
+    form select {
+      width: 35.5%;
+      height: 2.2rem;
+      margin-right: 0.5rem;
+      margin-bottom: 2rem;
+      padding-left: 1rem;
+      color: #5f5e61;
+    }
+
+    .register-button {
+      background: linear-gradient(84.05deg, #0D63F1 2.91%, #1791ED 103.25%);
+      border-radius: 53px;
+      height: 3rem;
+      border: none;
+      color: white;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    .why-careerlabs {
+      padding-top: 2rem;
+      padding-bottom: 2rem;
+    }
+
+    .why-careerlabs p:first-child {
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 39px;
+      color: #052A4E;
+      text-align: center;
+    }
+
+    .why-careerlabs p:nth-child(2),
+    .why-careerlabs p:nth-child(3) {
+      font-size: 20px;
+      line-height: 180%;
+      color: #413F4E;
+    }
+
+    .why-careerlabs p {
+      margin-bottom: 1rem;
+    }
+
+    .features-cards {
+      height: fit-content;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 2rem 0;
+    }
+
+    .assured-features {
+      display: flex;
+      align-items: center;
+      border-top: 2px solid #02ccba;
+      flex: 1 1 100px;
+      margin: 25px 20px;
+      padding: 10px;
+      text-align: center;
+      transition: 0.3s;
+      flex-direction: column;
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .img-container {
+      width: 100px;
+      border: 2px solid #d8d8d8;
+      border-radius: 50%;
+      background: white;
+      position: relative;
+      padding: 1rem;
+      top: -37px;
+    }
+
+    .img-container img {
+      width: 70%;
+    }
+
+
+    .features {
+      display: flex;
+      flex-direction: column;
+      margin-top: -27px;
+    }
+
+    .features h1 {
+      margin-top: 10px;
+      font-size: 1.1rem;
+      color: black;
+    }
+
+    .features p {
+      margin-top: 10px;
+      color: #696767;
+    }
+
+    .how-does-this-work p {
+      font-size: 2rem;
+      line-height: 2.43rem;
+      color: #052A4E;
+      text-align: center;
+    }
+
+
+    .how-does-this-work-img {
+      background-image: url("https://dsxfv1fxcymhz.cloudfront.net/nov/Img_How\ does\ this\ work_.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      min-height: 17.5rem;
+      background-position-x: center;
+    }
+
+    .career-tracks p {
+      font-size: 2rem;
+      line-height: 2.43rem;
+      text-align: center;
+      color: #052A4E;
+      margin-bottom: 1rem;
+    }
+
+
+    .career-tracks-imgs {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .career-tracks-imgs div {
+      margin-right: 0.7rem;
+      margin-bottom: 1rem;
+    }
+
+    .program-names {
+      display: flex;
+      justify-content: space-around;
+      height: 8rem;
+    }
+
+    hr {
+      margin-bottom: 3rem;
+    }
+
+
+    .active {
+      font-size: 2rem;
+      line-height: 150%;
+      text-align: center;
+      font-weight: 600;
+      color: #052A4E;
+      border-bottom: solid #1179EF 4px;
+      background-color: #E7F2FD;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+
+    #program-1,
+    #program-2,
+    #program-3 {
+      font-size: 2rem;
+      line-height: 150%;
+      text-align: center;
+      color: #052A4E;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+    }
+
+    .program-text {
+      font-size: 1.25rem;
+      line-height: 180%;
+      text-align: center;
+      color: #413F4E;
+      margin-bottom: 3rem;
+    }
+
+    .program-info {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 3rem;
+      background-color: #FFF2CE;
+    }
+
+    .program-info-1 p:first-child {
+      font-weight: 600;
+      font-size: 2.5rem;
+      line-height: 180%;
+      text-align: center;
+      color: #052A4E;
+    }
+
+    .program-info-1 p:nth-child(2) {
+      font-size: 1.5rem;
+      line-height: 180%;
+      text-align: center;
+      color: #052A4E;
+    }
+
+    .highlights-skillsCovered {
+      display: flex;
+    }
+
+    .highlights-skillsCovered-heading {
+      font-weight: 600;
+      font-size: 1.75rem;
+      line-height: 2.125rem;
+      color: #052A4E;
+      margin-bottom: 1rem;
+
+    }
+
+    .highlights {
+      margin-right: 16rem;
+    }
+
+    .highlight {
+      display: flex;
+    }
+
+    .highlight div:first-child {
+      margin-right: 1rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .highlight div:nth-child(2) {
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 180%;
+      color: #413F4E;
+    }
+
+    .skills-covered {
+      font-weight: 500;
+      font-size: 1.25rem;
+      line-height: 180%;
+      color: #413F4E;
+    }
+
+    .placements p {
+      font-size: 1.75rem;
+      line-height: 2.125rem;
+      color: #052A4E;
+      text-align: center;
+    }
+
+    .placements-imgs {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .placements-imgs img {
+      width: 17.87rem;
+      height: 6.87rem;
+      margin-right: 0.7rem;
+    }
+
+    .emi p {
+      font-size: 28px;
+      line-height: 34px;
+      font-weight: bold;
+      text-align: center;
+      color: #052A4E;
+      margin-bottom: 1rem;
+    }
+
+    .emi button {
+      width: 15.5rem;
+      height: 3.5rem;
+      border-radius: 3.31rem;
+      background: linear-gradient(84.05deg, #0D63F1 2.91%, #1791ED 103.25%);
+      border: none;
+      font-size: 1.125rem;
+      line-height: 150%;
+      color: #FFFFFF;
+    }
+
+    .emi div {
+      text-align: center;
+    }
+
+    .testimonials {
+      background-color: #F8F8FF;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+      width: 70%;
+      padding: 1rem 1rem;
+    }
+
+    .testimonials>p {
+      font-weight: 600;
+      font-size: 1.75rem;
+      line-height: 2.125rem;
+      color: #052A4E;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .review {
+      display: flex;
+    }
+
+    .review-img {
+      margin-right: 1rem;
+    }
+
+    .review-text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .review-text div:first-child {
+      font-weight: 500;
+      font-size: 1.3rem;
+      line-height: 1.5rem;
+      color: #052A4E;
+    }
+
+    .review-text div:nth-child(2) {
+      font-size: 1rem;
+      line-height: 1.5rem;
+      color: #413F4E;
+    }
+
+    .name-company {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+
+    .name-company p:first-child {
+      font-size: 1.125rem;
+      line-height: 1.5rem;
+      color: #052A4E;
+    }
+
+
+    .about-careerlabs {
+      display: flex;
+      justify-content: space-evenly;
+    }
+
+    .about-careerlabs-img {
+      background-image: url(https://dsxfv1fxcymhz.cloudfront.net/nov/Img_\ About\ CareerLabs\ web.png);
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      min-height: 22.5rem;
+      width: 37.75rem;
+      /* border: 1px solid red; */
+    }
+
+    .about-careerlabs-text {
+      width: 37rem;
+    }
+
+    .about-careerlabs-text1 {
+      font-weight: 600;
+      font-size: 2rem;
+      line-height: 2.43rem;
+      color: #052A4E;
+    }
+
+    .about-careerlabs-text2 {
+      font-size: 1.125rem;
+      line-height: 180%;
+      color: #413F4E;
+    }
+
+    #footer {
+      height: 5rem;
+      background: #001B78;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .second-form {
+      background-color: #EAEAFF;
+    }
+
+    #footer p {
+      color: #ffffff;
+    }
+
+    .banner-content-2 img {
+      width: 23.75rem;
+      height: 29.68rem;
+    }
+
+    /* mobile view  */
+
+    @media (max-width: 576px) {
+      .container {
+        padding: 1.5rem 1rem;
+      }
+
+      .banner {
+        background-image: url("https://dsxfv1fxcymhz.cloudfront.net/nov/background-mobile.png");
+        padding-bottom: 0rem;
+      }
+
+      .banner-content {
+        display: block;
+        margin-top: 1rem;
+      }
+
+      .banner-content p {
+        text-align: center;
+      }
+
+      .banner-content-1 p:first-child,
+      .banner-content-1 p:nth-child(2) {
+        font-weight: 600;
+        line-height: 150%;
+      }
+
+      .banner-content-1 p:first-child {
+        font-size: 18px;
+      }
+
+      .banner-content-1 p:nth-child(2) {
+        font-size: 24px;
+      }
+
+      .banner-content-1 p:nth-child(3) {
+        margin-top: 1rem;
+        font-size: 14px;
+        line-height: 170%;
+        color: white;
+      }
+
+      .curvy-container {
+        text-align: center;
+      }
+
+      .curvy-container img {
+        width: 18.75rem;
+        height: 2.125rem;
+      }
+
+      .banner-content-2 {
+        text-align: center;
+      }
+
+      .banner-content-2 img {
+        width: 13.75rem;
+        height: 17.68rem;
+
+      }
+
+      .eligibility {
+        height: 3.5rem;
+        font-size: 0.875rem;
+        line-height: 150%;
+      }
+
+      .eligibility img {
+        height: 2rem;
+        width: 2rem;
+      }
+
+      form input {
+        width: 91.11%;
+        height: 2rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+      }
+
+      form select {
+        width: 96.11%;
+        height: 2.3rem;
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+        color: #57575a;
+      }
+
+      .register {
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+      }
+
+      .register p {
+        font-size: 1.125rem;
+        line-height: 150%;
+      }
+
+      .register-button {
+        height: 3rem;
+        font-size: 0.875rem;
+      }
+
+      .why-careerlabs {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+      }
+
+      .why-careerlabs p:first-child {
+        font-size: 1.125rem;
+        line-height: 150%;
+      }
+
+      .why-careerlabs p:nth-child(2),
+      .why-careerlabs p:nth-child(3) {
+        font-size: 0.875rem;
+        line-height: 180%;
+      }
+
+      .why-careerlabs p {
+        margin-bottom: 0.5rem;
+      }
+
+
+      .img-container {
+        width: 50px;
+      }
+
+      .img-container img {
+        width: 100%;
+      }
+
+      .how-does-this-work p {
+        font-size: 1.125rem;
+        line-height: 150%;
+      }
+
+      .how-does-this-work-img {
+        background-image: url("https://dsxfv1fxcymhz.cloudfront.net/nov/clapp-how-does-work.png");
+        min-height: 8.43rem;
+        width: 100%;
+      }
+
+      .career-tracks p {
+        font-size: 1.125rem;
+        line-height: 150%;
+      }
+
+
+      .career-tracks-imgs {
+        display: block;
+        text-align: center;
+      }
+
+      .career-tracks-imgs div {
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+      }
+
+      .program-names {
+        height: 6.75rem;
+      }
+
+      hr {
+        margin-bottom: 1rem;
+      }
+
+
+      #program-1 {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 1rem;
+        line-height: 150%;
+      }
+
+      #program-2 {
+        font-size: 1rem;
+        line-height: 150%;
+      }
+
+
+      #program-3 {
+        font-size: 1rem;
+        line-height: 150%;
+      }
+
+      .program-text {
+        margin-bottom: 1rem;
+        font-size: 0.875rem;
+
+      }
+
+      .program-info {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 1rem;
+        background-color: #FFF2CE;
+      }
+
+      .program-info-1 p:first-child {
+        font-size: 1rem;
+      }
+
+      .program-info-1 p:nth-child(2) {
+        font-size: 0.75rem;
+        line-height: 150%;
+      }
+
+
+      .highlights-skillsCovered {
+        display: block;
+      }
+
+      .highlights-skillsCovered-heading {
+        margin-bottom: 1rem;
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+      }
+
+      .highlights {
+        margin-right: 0rem;
+        margin-bottom: 1rem;
+      }
+
+      .highlight div:nth-child(2) {
+        font-size: 0.875rem;
+        line-height: 180%;
+      }
+
+      .skills-covered {
+        font-size: 0.875rem;
+      }
+
+      .placements p {
+        font-size: 1.125rem;
+        line-height: 1.375rem;
+        font-weight: bolder;
+      }
+
+      .placements-imgs {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .placements-imgs img {
+        width: 9.75rem;
+        height: 3.75rem;
+        margin-right: 0rem;
+      }
+
+      .review {
+        display: block;
+      }
+
+      .review-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 0.5rem;
+      }
+
+      .about-careerlabs {
+        display: block;
+      }
+
+      .about-careerlabs-img {
+        background-image: url(https://dsxfv1fxcymhz.cloudfront.net/nov/img_About\ CareerLabs\ mobile.png);
+        width: 100%;
+      }
+
+      .about-careerlabs-text {
+        width: 100%;
+      }
+
+      .about-careerlabs-text1 {
+        font-size: 1.125rem;
+        line-height: 1.37rem;
+      }
+
+      .about-careerlabs-text2 {
+        font-size: 0.875rem;
+        line-height: 180%;
+      }
+
+      #footer {
+        height: 3.5rem;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="banner container">
+    <div class="careerlabs-logo">
+      <img src="https://dsxfv1fxcymhz.cloudfront.net/nov/careerlabs-web.png" alt="" />
+    </div>
+    <div class="banner-content">
+      <div class="banner-content-1">
+        <p>CareerLabs Assured</p>
+        <p>Placement Program</p>
+        <p>
+          Build Technical Knowledge to land core Engineering Jobs in reputed
+          Companies
+        </p>
+        <div class="curvy-container">
+          <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/curvyimg-web.png" alt="" />
+        </div>
+      </div>
+      <div class="banner-content-2">
+        <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/clapp-banner-img.png" alt="" />
+      </div>
+    </div>
+  </div>
+  <div class="eligibility">
+    <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/eligibility-img.png" alt="" />
+    <p>Eligibility:</p>
+    <p>B.Tech, MCA, M.Sc. (IT & CS) |
+      2020, 2021, 2022 Graduates |
+      Minimum 60% aggregate </p>
+  </div>
+  <div class="register container" id="clapp-form">
+    <p>Register with us to get Placed today</p>
+    <form id="reg-form" name="FORM 0" method="Post" enctype="multipart/form-data"
+      action="https://web-in21.mxradon.com/t/FormTracker.aspx" onsubmit="handleOnSubmit(); gtag_report_conversion();">
+      <!-- <p id="error" style="color: red; text-align: center"> -->
+      <input id="name" type="text" placeholder="Name" name="name" value="" required="" />
+      <input id="email" type="email" placeholder="Email" name="email" value="" required="" />
+      <input id="phone" type="tel" name="phone" placeholder="Phone" maxlength="10" pattern="[0-9]{10}" value=""
+        required="" />
+      <!-- <input
+          id="city"
+          type="text"
+          name="city"
+          placeholder="City"
+          value=""
+          required=""
+        /> -->
+      <select name="program" id="program" required="">
+        <option value="">Program</option>
+        <option value="Full Stack Java Development">Full Stack Java Development</option>
+        <option value="Embedded Systems & IoT">Embedded Systems & IoT</option>
+        <option value="Automation & Testing
+">Automation & Testing
+        </option>
+
+      </select>
+      <select name="semester" id="semester" required="">
+        <option value="">Semester</option>
+        <option value="Passed Out">Passed Out</option>
+        <option value="8">8</option>
+        <option value="7">7</option>
+        <option value="6">6</option>
+        <option value="5">5</option>
+        <option value="4">4</option>
+        <option value="3">3</option>
+        <option value="2">2</option>
+        <option value="1">1</option>
+      </select><br>
+      <input id="submit-btn" type="submit" value="Register Now!" class="register-button" />
+      <input type="hidden" name="MXHOrgCode" value="24696" /><input type="hidden" name="MXHLandingPageId"
+        value="2222c078-7ea8-11eb-95ea-02612e94b82c" /><input type="hidden" name="MXHFormBehaviour" value="1" /><input
+        type="hidden" name="MXHOutputMessagePosition" value="0" /><input type="hidden" name="MXHFormDataTransfer"
+        value="0" /><input type="hidden" name="MXHRedirectUrl"
+        value="https://thecareerlabs.com/byjus-gre-thank-you" /><input type="hidden" name="MXHAsc" value="5" /><input
+        type="hidden" name="MXHFormName" value="FORM 0" /><input type="hidden" name="MXHSecretKey" value="" /><input
+        type="hidden" name="MXHOutputMessagePosition" value="0" />
+    </form>
+  </div>
+  <div class="why-careerlabs container">
+    <p>Why CareerLabs Assured Placement Program?</p>
+    <p>
+      CareerLabs offers Assured Placement Program to train students on various
+      technical domains with our Subject-Matter experts, help gain the right
+      skills, prepare them to face Interviews and exit them Job-Ready! But how
+      are these skills going to help without the right Placement opportunity?
+    </p>
+    <p>
+      We provide Job opportunities with leading and reputed Companies in
+      India! Our students are happily placed at L&T, Tech Mahindra, HCL, Sony,
+      Samsung, Wipro, and many more!
+    </p>
+    <div class="features-cards">
+      <div class="assured-features">
+        <div class="img-container">
+          <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/job-guarantee.png" alt="illustration" />
+        </div>
+        <div class="features">
+          <h1>100% Core Job Guarantee</h1>
+          <p>Get Placed in Top companies like Harman, Huawei, Sony etc.</p>
+        </div>
+      </div>
+      <div class="assured-features">
+        <div class="img-container">
+          <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/placement-preparation.png"
+            alt="illustration" />
+        </div>
+        <div class="features">
+          <h1>Special Placement Preparation</h1>
+          <p>Personalized help for cracking interview</p>
+        </div>
+      </div>
+      <div class="assured-features">
+        <div class="img-container">
+          <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/industry courses.png"
+            alt="IndustryCourses" />
+        </div>
+        <div class="features">
+          <h1>Industry Courses</h1>
+          <p>AI, Data Science, Embedded Systems, IOT & more</p>
+        </div>
+      </div>
+      <div class="assured-features">
+        <div class="img-container">
+          <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/handson.png" alt="illustration" />
+        </div>
+        <div class="features">
+          <h1>Hands On Projects</h1>
+          <p>Learn through projects & 1-on-1 Sessions</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="how-does-this-work">
+    <p>How does this work?</p>
+    <div class="how-does-this-work-img"></div>
+  </div>
+  <!--<div class="career-tracks container">
+      <p>Career Tracks</p>
+      <div class="career-tracks-imgs">
+        <div>
+          <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/Img_ Full stack Java Development.png" alt="" />
+        </div>
+        <div>
+          <img
+          loading="lazy"
+            src="https://dsxfv1fxcymhz.cloudfront.net/nov/Img_Internet of Things & Data Science.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/UX Design.png" alt="" />
+        </div>
+        <div>
+          <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/Img_Embedded Systems.png" alt="" />
+        </div>
+        <div>
+          <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/Img_VLSI Design & Verification.png" alt="" />
+        </div>
+        <div>
+          <img
+          loading="lazy"
+            src="https://dsxfv1fxcymhz.cloudfront.net/nov/Img_Embedded Systems Design & Automotive Our Alumni Work He.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/Img_ Data Science.png" alt="" />
+        </div>
+      </div>
+    </div>-->
+  <div class="programs container">
+    <div class="program-names">
+      <a id="program-1" class="active" onclick="markTheClick(event)">Full Stack Java Development</a>
+      <a id="program-2" onclick="markTheClick(event)"> Embedded Systems & IoT</a>
+      <a id="program-3" onclick="markTheClick(event)"> Automation & Testing</a>
+
+    </div>
+    <hr />
+    <div id="program-set-1" class="program-details">
+      <div class="program-text">
+        CareerLabs offers Full Stack Java Development Program, the trending and
+        most-required skill in the Industry. The Subject Expert Coaching and
+        Application Oriented Learning Approach makes learning fun, informative
+        and scope-rich. With this Program, you’ll get equipped with the top
+        skills like Angular, Spring Boot, Hibernate, Servlets and JSPs.
+      </div>
+      <div class="program-info">
+        <div class="program-info-1">
+          <p>3 Months</p>
+          <p>Course Duration</p>
+        </div>
+        <div class="program-info-1">
+          <p>245</p>
+          <p>Students Enrolled</p>
+        </div>
+        <div class="program-info-1">
+          <p>22</p>
+          <p>Hiring Partners</p>
+        </div>
+      </div>
+      <div class="highlights-skillsCovered">
+        <div class="highlights">
+          <div class="highlights-skillsCovered-heading">Key Highlights</div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Subject Expert Coaching.png"
+                alt="" />
+            </div>
+            <div>Subject Expert Coaching</div>
+          </div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Technical Seminar and Symposium.png"
+                alt="" />
+            </div>
+            <div>Technical Seminar and Symposium</div>
+          </div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy"
+                src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Soft skills training & Interview Readiness.png"
+                alt="" />
+            </div>
+            <div>Soft skills training & Interview Readiness</div>
+          </div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy"
+                src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Application Oriented Learning Approach.png" alt="" />
+            </div>
+            <div>Application Oriented Learning Approach</div>
+          </div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy"
+                src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Performance  Evaluation & Grading.png" alt="" />
+            </div>
+            <div>Performance Evaluation & Grading</div>
+          </div>
+        </div>
+        <div class="skills-covered">
+          <div class="highlights-skillsCovered-heading">Skills Covered</div>
+          <li>JUNIT</li>
+          <li>Maven</li>
+          <li>Eclipse</li>
+          <li>NetBeans with JDK1.9</li>
+        </div>
+      </div>
+    </div>
+
+    <div id="program-set-2" class="program-details-hide">
+      <div class="program-text">
+        Embedded Systems & IoT are the talks of the town & a dream job for any Engineer out there! With the growing
+        demand for the Applications of Embedded Systems & IoT in the Industries, it’s a must-have skill to be developed
+        by budding Engineers and experienced Professionals. CareerLabs offers an Embedded Systems & IoT Program that
+        primarily focuses on Designing, Developing, and Integrating Advanced Embedded Systems and IoT-enabled devices &
+        getting equipped with career opportunities after completion of the course. Get Upskilled today.
+      </div>
+      <div class="program-info">
+        <div class="program-info-1">
+          <p>4 Months</p>
+          <p>Course Duration</p>
+        </div>
+        <div class="program-info-1">
+          <p>326</p>
+          <p>Students Enrolled</p>
+        </div>
+        <div class="program-info-1">
+          <p>26</p>
+          <p>Hiring Partners</p>
+        </div>
+      </div>
+      <div class="highlights-skillsCovered">
+        <div class="highlights">
+          <div class="highlights-skillsCovered-heading">Key Highlights</div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Subject Expert Coaching.png"
+                alt="" />
+            </div>
+            <div>Subject Expert Coaching</div>
+          </div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Technical Seminar and Symposium.png"
+                alt="" />
+            </div>
+            <div>Technical Seminar and Symposium</div>
+          </div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy"
+                src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Soft skills training & Interview Readiness.png"
+                alt="" />
+            </div>
+            <div>Soft skills training & Interview Readiness</div>
+          </div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy"
+                src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Application Oriented Learning Approach.png" alt="" />
+            </div>
+            <div>Application Oriented Learning Approach</div>
+          </div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy"
+                src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Limited Batch Strength for Individual attention.png"
+                alt="" />
+            </div>
+            <div>Limited Batch Strength for Individual attention</div>
+          </div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy"
+                src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Performance  Evaluation & Grading.png" alt="" />
+            </div>
+            <div>Performance Evaluation & Grading</div>
+          </div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy"
+                src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Application Oriented Learning Approach.png" alt="" />
+            </div>
+            <div>Real Projects from the Industry</div>
+          </div>
+        </div>
+
+
+        <div class="skills-covered">
+          <div class="highlights-skillsCovered-heading">Skills Covered</div>
+          <li>Raspberry Pi3</li>
+          <li>Data Analysis & Visualization
+          </li>
+          <li>Machine Learning using SKlearn
+          </li>
+          <li>Tableau Cloud</li>
+          <li>Computing with AWS
+          </li>
+          <li>LPC 2129 </li>
+          <li>Ubuntu (Linux OS with GCC Compiler)</li>
+          <li>LPC 2148 Keil Microvision
+          </li>
+        </div>
+      </div>
+    </div>
+
+    <div id="program-set-3" class="program-details-hide">
+      <div class="program-text">
+        CareerLabs offers Automation Testing Program to get equipped with high-end Automation skills and build your
+        profile to reach your career destination. The ‘Automation Testing’ program helps you to get started with the
+        basics of Software Testing and systematically helps to acquire a professional level of skills like Selenium,
+        Cucumber, Jenkins, Maven, JIRA.
+
+      </div>
+      <div class="program-info">
+        <div class="program-info-1">
+          <p>3 Months</p>
+          <p>Course Duration</p>
+        </div>
+        <div class="program-info-1">
+          <p>230</p>
+          <p>Students Enrolled</p>
+        </div>
+        <div class="program-info-1">
+          <p>60</p>
+          <p>Hiring Partners</p>
+        </div>
+      </div>
+      <div class="highlights-skillsCovered">
+        <div class="highlights">
+          <div class="highlights-skillsCovered-heading">Key Highlights</div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Subject Expert Coaching.png"
+                alt="" />
+            </div>
+            <div>Over 100 hours of training
+            </div>
+          </div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Technical Seminar and Symposium.png"
+                alt="" />
+            </div>
+            <div>Limited Batch size to maximize attention
+            </div>
+          </div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy"
+                src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Soft skills training & Interview Readiness.png"
+                alt="" />
+            </div>
+            <div>Soft Skills Training & Interview Readiness</div>
+          </div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy"
+                src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Application Oriented Learning Approach.png" alt="" />
+            </div>
+            <div>1 on 1 Doubt Clearance by Mentors</div>
+          </div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy"
+                src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Limited Batch Strength for Individual attention.png"
+                alt="" />
+            </div>
+            <div>Access to Industry-specific Webinars & Workshops</div>
+          </div>
+          <div class="highlight">
+            <div>
+              <img loading="lazy"
+                src="https://dsxfv1fxcymhz.cloudfront.net/nov/ic_Performance  Evaluation & Grading.png" alt="" />
+            </div>
+            <div>Real Projects from the Industry
+            </div>
+          </div>
+        </div>
+        <div class="skills-covered">
+          <div class="highlights-skillsCovered-heading">Skills Covered</div>
+          <li>Manual Testing</li>
+          <li>Fundamentals of Java Programming Language
+          </li>
+          <li>Automation Testing using Selenium</li>
+          <li>SQL Fundamentals </li>
+          <li>Introduction to API Testing
+          </li>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="placements container">
+    <p style="font-weight: bold;">Placements</p>
+    <div class="placements-imgs">
+      <div><img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/Img_placement 1.png" alt="" /></div>
+      <div><img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/Img_placement 2.png" alt="" /></div>
+      <div><img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/Img_placement 3.png" alt="" /></div>
+      <div><img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/Img_placement 4.png" alt="" /></div>
+      <div><img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/Img_placement 5.png" alt="" /></div>
+      <div><img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/Img_placement 6.png" alt="" /></div>
+      <div><img loading="lazy" src="https://dsxfv1fxcymhz.cloudfront.net/nov/Img_placement 7.png" alt="" /></div>
+
+
+
+    </div>
+  </div>
+  <div class="emi container">
+    <p>EMI Starts From 5,999/-</p>
+    <div><a href="#clapp-form"><button style="cursor: pointer;">Book Your Seat</button></div></a>
+  </div>
+  <div class="testimonials container">
+    <p>Our Students Love Us</p>
+    <div class="card" style="margin-bottom: 2%;">
+      <div class="review">
+        <div class="review-img">
+          <img src="https://dsxfv1fxcymhz.cloudfront.net/nov/Img_Avatar.png" alt="" />
+          <img src="https://dsxfv1fxcymhz.cloudfront.net/nov/stars.png" alt="" />
+        </div>
+        <div class="review-text">
+          <div>Best Training and Placement Assistance in Embedded Domain</div>
+          <div>
+            It was a great experience in CareerLabs. My dream was to get into
+            an embedded domain. As a fresher it is difficult to get into the
+            Embedded Design field, but CareerLabs made a huge difference in my
+            career by giving the best training and placement assistance. I
+            would like to say CareerLabs is the best choice for those who
+            dream of embedded opportunity.
+          </div>
+        </div>
+      </div>
+      <div class="name-company">
+        <p>-Mayur MN</p>
+        <p>(Placed in L&T Technology)</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="review">
+        <div class="review-img">
+          <img src="https://dsxfv1fxcymhz.cloudfront.net/nov/Img_Avatar_Female.png" alt="" />
+          <img src="https://dsxfv1fxcymhz.cloudfront.net/nov/stars.png" alt="" />
+        </div>
+        <div class="review-text">
+          <div>Focused Trainings And Multiple Career Opportunities</div>
+          <div>
+            I am a 2018 B.Tech (CSE) pass out from Government Engineering College Idukki. I came to know about
+            CareerLabs through one of my cousins. I did a UI/UX course here. The training and sessions here was really
+            helpful. I got more than 15 opportunities & got an opportunity to start my career with Seventeen seven.
+          </div>
+        </div>
+      </div>
+      <div class="name-company">
+        <p>-Nidhin M</p>
+        <p>(Placed in Seventeen Seven)</p>
+      </div>
+    </div>
+  </div>
+  <div class="about-careerlabs container">
+    <div class="about-careerlabs-img"></div>
+    <div class="about-careerlabs-text">
+      <p class="about-careerlabs-text1">About CareerLabs</p>
+      <p class="about-careerlabs-text2">
+        CareerLabs has successfully garnered the trust of thousands of college
+        students & young working professionals, becoming the go-to place for
+        all their career needs. Envisioning to empower 1 million
+        undergraduates to craft the careers of their choosing, CareerLabs
+        offer a variety of aptly matched and mentor-driven preparatory
+        programs for national & international entrance exams and admissions
+        consulting services for graduate & business schools, both abroad and
+        in India
+      </p>
+    </div>
+  </div>
+  <div class="register container second-form">
+    <p>Register with us to get Placed today</p>
+    <form id="reg-form" name="FORM 0" method="Post" enctype="multipart/form-data"
+      action="https://web-in21.mxradon.com/t/FormTracker.aspx" onsubmit="handleOnSubmit1(); gtag_report_conversion();">
+      <!-- <p id="error" style="color: red; text-align: center"> -->
+      <input id="name1" type="text" placeholder="Name" name="name" value="" required="" />
+      <input id="email1" type="email" placeholder="Email" name="email" value="" required="" />
+      <input id="phone1" type="tel" name="phone" placeholder="Phone" maxlength="10" pattern="[0-9]{10}" value=""
+        required="" />
+      <!-- <input
+                  id="city1"
+                  type="text"
+                  name="city"
+                  placeholder="City"
+                  value=""
+                  required=""
+                /> -->
+      <select name="program" id="program1" required="">
+        <option value="">Program</option>
+        <option value="Full Stack Java Development">Full Stack Java Development</option>
+        <option value="Data Science Program with Python">Data Science Program with Python</option>
+      </select>
+      <select name="semester" id="semester1" required="">
+        <option value="">Semester</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+        <option value="7">7</option>
+        <option value="8">8</option>
+        <option value="Passed Out">Passed Out</option>
+      </select><br>
+      <input id="submit-btn" type="submit" value="Register Now!" class="register-button" />
+      <input type="hidden" name="MXHOrgCode" value="24696" /><input type="hidden" name="MXHLandingPageId"
+        value="2222c078-7ea8-11eb-95ea-02612e94b82c" /><input type="hidden" name="MXHFormBehaviour" value="1" /><input
+        type="hidden" name="MXHOutputMessagePosition" value="0" /><input type="hidden" name="MXHFormDataTransfer"
+        value="0" /><input type="hidden" name="MXHRedirectUrl"
+        value="https://thecareerlabs.com/byjus-gre-thank-you" /><input type="hidden" name="MXHAsc" value="5" /><input
+        type="hidden" name="MXHFormName" value="FORM 0" /><input type="hidden" name="MXHSecretKey" value="" /><input
+        type="hidden" name="MXHOutputMessagePosition" value="0" />
+    </form>
+  </div>
+  <div id="footer">
+    <p>© 2021 CareerLabs Technologies Pvt Ltd</p>
+  </div>
+  <script>
+    function checkPhone(value) {
+      let phoneNum = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+      return value.match(phoneNum);
+    }
+    function isEmailAddress(str) {
+      let pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+      return pattern.test(str);
+    }
+    function isName(str) {
+      let pattern = /^[a-zA-z]+([\s][a-zA-Z]+)*$/;
+      return pattern.test(str);
+    }
+    function handleOnSubmit() {
+      const urlParams = new URLSearchParams(window.location.search);
+      let url, source, campaign, medium, device, term, name, email, phone, city;
+      url = window.location.href;
+      source = urlParams.get('utm_source');
+      campaign = urlParams.get('utm_campaign');
+      medium = urlParams.get('utm_medium');
+      term = urlParams.get('utm_term');
+      device = urlParams.get('utm_device');
+      name = document.getElementById('name');
+      email = document.getElementById('email');
+      phone = document.getElementById('phone');
+      program = document.getElementById('program');
+      semester = document.getElementById('semester');
+      // if (
+      //   name.value !== '' &&
+      //   email.value !== '' &&
+      //   phone.value !== '' &&
+      //   city.value !== '' &&
+      //   checkPhone(phone.value) &&
+      //   isEmailAddress(email.value) &&
+      //   isName(name.value) &&
+      //   isName(city.value)
+      // ) {
+      document.getElementById('submit-btn').innerHTML = 'Loading...';
+      document.getElementById('submit-btn').disabled = true;
+      setTimeout(() => {
+        document.getElementById('submit-btn').innerHTML = 'Submit';
+        document.getElementById('submit-btn').disabled = false;
+      }, 1500);
+      const data = {
+        account: 'GRE',
+        firstName: name.value.split(' ')[0],
+        lastName: name.value.split(' ')[1] !== undefined ? name.value.split(' ')[1] : '',
+        email: email.value,
+        phone: phone.value,
+        programName: program.value,
+        semester: semester.value,
+        pageCode: '389',
+        source: source,
+        sourceCode: campaign,
+        website: url,
+        sourceMedium: medium,
+        device: device,
+        term: term,
+        eventMsg: `${name.value.split(' ')[0]} registered from ${url} Website.`,
+      };
+      window.open('https://thecareerlabs.com/byjus-gre-thank-you', '_self');
+      fetch('https://careerwizard.thecareerlabs.com/ls/api/v1/registration', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+        .then((response) => {
+          document.getElementById('reg-form').reset();
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+      // } else {
+      //   document.getElementById('error').innerHTML = 'Please fill all the fields properly';
+      //   setTimeout(() => {
+      //     document.getElementById('error').innerHTML = '';
+      //   }, 1500);
+      // }
+    }
+    function handleOnSubmit1() {
+      const urlParams = new URLSearchParams(window.location.search);
+      let url, source, campaign, medium, device, term, name, email, phone, city;
+      url = window.location.href;
+      source = urlParams.get('utm_source');
+      campaign = urlParams.get('utm_campaign');
+      medium = urlParams.get('utm_medium');
+      term = urlParams.get('utm_term');
+      device = urlParams.get('utm_device');
+      name = document.getElementById('name1');
+      email = document.getElementById('email1');
+      phone = document.getElementById('phone1');
+      program = document.getElementById('program1');
+      semester = document.getElementById('semester1');
+      // if (
+      //   name.value !== '' &&
+      //   email.value !== '' &&
+      //   phone.value !== '' &&
+      //   city.value !== '' &&
+      //   checkPhone(phone.value) &&
+      //   isEmailAddress(email.value) &&
+      //   isName(name.value) &&
+      //   isName(city.value)
+      // ) {
+      document.getElementById('submit-btn').innerHTML = 'Loading...';
+      document.getElementById('submit-btn').disabled = true;
+      setTimeout(() => {
+        document.getElementById('submit-btn').innerHTML = 'Submit';
+        document.getElementById('submit-btn').disabled = false;
+      }, 1500);
+      const data = {
+        account: 'GRE',
+        firstName: name.value.split(' ')[0],
+        lastName: name.value.split(' ')[1] !== undefined ? name.value.split(' ')[1] : '',
+        email: email.value,
+        phone: phone.value,
+        programName: program.value,
+        semester: semester.value,
+        pageCode: '389',
+        source: source,
+        sourceCode: campaign,
+        website: url,
+        sourceMedium: medium,
+        device: device,
+        term: term,
+        eventMsg: `${name.value.split(' ')[0]} registered from ${url} Website.`,
+      };
+      window.open('https://thecareerlabs.com/byjus-gre-thank-you', '_self');
+      fetch('https://careerwizard.thecareerlabs.com/ls/api/v1/registration', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      })
+        .then((response) => {
+          document.getElementById('reg-form').reset();
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+      // } else {
+      //   document.getElementById('error').innerHTML = 'Please fill all the fields properly';
+      //   setTimeout(() => {
+      //     document.getElementById('error').innerHTML = '';
+      //   }, 1500);
+      // }
+    }
+  </script>
+</body>
+
+</html>

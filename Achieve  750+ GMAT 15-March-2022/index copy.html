@@ -61,7 +61,7 @@
     <!-- auto-populate details -->
     <script>
       localStorage.setItem("lp-form-submission", '');
-          const urlParameters = new URLSearchParams(window.location.search);
+      const urlParameters = new URLSearchParams(window.location.search);
       console.log(urlParameters)
       console.log(urlParameters.get('utm_source'))
           let utm_url, utm_source, utm_campaign, utm_medium, utm_device, utm_term
@@ -204,19 +204,22 @@
 
     <div class="form-section" id="form">
       <h1 class="form-section-heading">Want to score 750+ in GMAT?</h1>
-      <form
+      <!-- <form
         class="form"
         id="reg-form"
         name="FORM 0"
         method="post"
         enctype="multipart/form-data"
         action="https://web-in21.mxradon.com/t/FormTracker.aspx"
-      ></form>
+      ></form> -->
       <form
         class="form"
-        id="reg-form-capture-1"
-        name="FORM-CAPTURE-1"
-        onsubmit="handleOnSubmit(event); gtag_report_conversion();"
+        id="reg-form"
+        name="FORM 0"
+        method="Post"
+        enctype="multipart/form-data"
+        action="https://web-in21.mxradon.com/t/FormTracker.aspx"
+        onsubmit="handleOnSubmit(); gtag_report_conversion();"
       >
         <h1 class="secondSection-title">
           Want to know more about how to prepare?
@@ -609,10 +612,13 @@
     <div class="form-section-last" id="form-last">
       <h1 class="form-section-heading">Want to score 750+ in GMAT?</h1>
       <form
-        class="form"
-        id="reg-form-capture-2"
-        name="FORM-CAPTURE-2"
-        onsubmit="handleOnSubmit(event); gtag_report_conversion();"
+      class="form"
+      id="reg-form-1"
+      name="FORM 1"
+      method="Post"
+      enctype="multipart/form-data"
+      action="https://web-in21.mxradon.com/t/FormTracker.aspx"
+      onsubmit="handleOnSubmit1(); gtag_report_conversion();"
       >
         <h1 class="secondSection-title">
           Want to know more about how to prepare?
@@ -665,7 +671,7 @@
           id="form2redirect"
           type="hidden"
           name="MXHRedirectUrl"
-          value="http://gmatprep.byjus.com/byjus-gmat-thank-you"
+          value="https://gmatprep.byjus.com/byjus-gmat-thank-you"
         /><input type="hidden" name="MXHAsc" value="5" /><input
           type="hidden"
           name="MXHFormName"
@@ -685,141 +691,166 @@
       <p class="form-section-text">© 2022 CareerLabs Technologies Pvt Ltd</p>
     </div>
     <script>
-    function checkPhone(value) {
-      let phoneNum =
-        /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
-      return value.match(phoneNum);
-    }
-    function isEmailAddress(str) {
-      let pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-      return pattern.test(str);
-    }
-    function isName(str) {
-      let pattern = /^[a-zA-z]+([\s][a-zA-Z]+)*$/;
-      return pattern.test(str);
-    }
-
-    let isAPI1Completed = false,
-      isAPI2Completed = false;
-
-    function handleOnSubmit(e) {
-      e.preventDefault();
-      const urlParams = new URLSearchParams(window.location.search);
-      let url,
-        source,
-        campaign,
-        medium,
-        device,
-        term,
-        name,
-        email,
-        phone,
-        gmatAppearingStatus;
-      url = window.location.href;
-      source = urlParams.get("utm_source");
-      campaign = urlParams.get("utm_campaign");
-      medium = urlParams.get("utm_medium");
-      term = urlParams.get("utm_term");
-      device = urlParams.get("utm_device");
-      name = e.target.id==="reg-form-capture-1"? document.getElementById("name"):document.getElementById("name1")
-      email = e.target.id==="reg-form-capture-1"?document.getElementById("email"):document.getElementById("email1")
-      phone = e.target.id==="reg-form-capture-1"?document.getElementById("phone"):document.getElementById("phone1")
-    
-      const data = {
-        account: "GMAT",
-        firstName: name.value.split(" ")[0],
-        lastName:
-          name.value.split(" ")[1] !== undefined
-            ? name.value.split(" ")[1]
-            : "",
-        email: email.value,
-        phone: phone.value,
-        pageCode: "255",
-        source: source,
-        sourceCode: campaign,
-        website: url,
-        sourceMedium: medium,
-        device: device,
-        term: term,
-        eventMsg: `${
-          name.value.split(" ")[0]
-        } registered from ${url} Website.`,
-      };
-      if(e.target.id==="reg-form-capture-1"){
-        document.getElementsByName("submit-btn-1")[0].value = "Loading...";
-        document.getElementsByName("submit-btn-1")[0].disabled = true;
-      }else{
-        document.getElementsByName("submit-btn-2")[0].value = "Loading...";
-        document.getElementsByName("submit-btn-2")[0].disabled = true;
+      function checkPhone(value) {
+        let phoneNum =
+          /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im;
+        return value.match(phoneNum);
       }
-      // document.getElementsByClassName("submit-btn")[0].value = "Loading...";
-      // document.getElementsByClassName("submit-btn")[0].disabled = true;
-      
-      fetch("https://careerwizard.thecareerlabs.com/ls/api/v1/registration", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(data),
-      })
-        .then((response) => {
-          // console.log(response);
-          localStorage.setItem("lp-form-submission", "success");
-          if(e.target.id==="reg-form-capture-1"){
-            document.getElementsByName("submit-btn-1")[0].value = "Start My Prep";
-            document.getElementsByName("submit-btn-1")[0].disabled = false;
-          }else{
-            document.getElementsByName("submit-btn-2")[0].value = "Start My Prep";
-            document.getElementsByName("submit-btn-2")[0].disabled = false;
-          }
-          // document.getElementsByClassName("submit-btn")[0].value = "Start My Prep";
-          // document.getElementsByClassName("submit-btn")[0].disabled = false;
-          isAPI1Completed = true;
-          reDirectToThankYouPage(e);
-        })
-        .catch((error) => {
-          console.error("Error:", error);
-          isAPI1Completed = true;
-          reDirectToThankYouPage(e);
-        });
-      fetch(
-        "https://careerwizard.thecareerlabs.com/verloop/Campaign/SendMessage",
-        {
+      function isEmailAddress(str) {
+        let pattern = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+        return pattern.test(str);
+      }
+      function isName(str) {
+        let pattern = /^[a-zA-z]+([\s][a-zA-Z]+)*$/;
+        return pattern.test(str);
+      }
+      function handleOnSubmit() {
+        const urlParams = new URLSearchParams(window.location.search);
+        let url, source, campaign, medium, device, term, name, email, phone;
+        url = window.location.href;
+        source = urlParams.get("utm_source");
+        campaign = urlParams.get("utm_campaign");
+        medium = urlParams.get("utm_medium");
+        term = urlParams.get("utm_term");
+        device = urlParams.get("utm_device");
+        name = document.getElementById("name");
+        email = document.getElementById("email");
+        phone = document.getElementById("phone");
+
+        document.getElementById("submit-btn-1").innerHTML = "Loading...";
+        document.getElementById("submit-btn-1").disabled = true;
+        setTimeout(() => {
+          document.getElementById("submit-btn-1").innerHTML = "Submit";
+          document.getElementById("submit-btn-1").disabled = false;
+        }, 1500);
+        const data = {
+          account: "GMAT",
+          firstName: name.value.split(" ")[0],
+          lastName:
+            name.value.split(" ")[1] !== undefined
+              ? name.value.split(" ")[1]
+              : "",
+          email: email.value,
+          phone: phone.value,
+          pageCode: "255",
+          source: source,
+          sourceCode: campaign,
+          website: url,
+          sourceMedium: medium,
+          device: device,
+          term: term,
+          eventMsg: `${
+            name.value.split(" ")[0]
+          } registered from ${url} Website.`,
+        };
+        fetch("https://careerwizard.thecareerlabs.com/ls/api/v1/registration", {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
           },
-          body: JSON.stringify({
-            CampaignID: "b58158c1-19d7-47bb-b325-7b03c6583a45",
-            PhoneNumber: `91${data.phone}`,
-          }),
-        }
-      )
-        .then((response) => {
-          // console.log(response)
-          isAPI2Completed = true;
-          reDirectToThankYouPage(e);
+          body: JSON.stringify(data),
         })
-        .catch((error) => {
-          // console.error("Error:", error);
-          isAPI2Completed = true;
-          reDirectToThankYouPage(e);
-        });
-    }
-
-    const reDirectToThankYouPage = async (event) => {
-      if (isAPI1Completed && isAPI2Completed) {
-        console.log("API completed...");
-        var normalForm = document.querySelector(`#${event.target.id}`),
-          hiddenForm = document.querySelector("#reg-form");
-        await normalForm.childNodes.forEach((item) => {
-          var node = item.cloneNode(true);
-          hiddenForm.appendChild(node);
-        });
-        console.log(hiddenForm);
-        hiddenForm.submit();
+          .then((response) => {
+            console.log(response);
+            localStorage.setItem("lp-form-submission", "success");
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+        fetch(
+          "https://careerwizard.thecareerlabs.com/verloop/Campaign/SendMessage",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              CampaignID: "b58158c1-19d7-47bb-b325-7b03c6583a45",
+              PhoneNumber: `91${data.phone}`,
+            }),
+          }
+        )
+          .then((response) => {
+            // console.log(response)
+          })
+          .catch((error) => {
+            // console.error("Error:", error);
+          });
       }
-    };
-  </script>
+      function handleOnSubmit1() {
+        const urlParams = new URLSearchParams(window.location.search);
+        let url, source, campaign, medium, device, term, name, email, phone;
+        url = window.location.href;
+        source = urlParams.get("utm_source");
+        campaign = urlParams.get("utm_campaign");
+        medium = urlParams.get("utm_medium");
+        term = urlParams.get("utm_term");
+        device = urlParams.get("utm_device");
+        name = document.getElementById("name1");
+        email = document.getElementById("email1");
+        phone = document.getElementById("phone1");
+
+        document.getElementById("submit-btn-2").innerHTML = "Loading...";
+        document.getElementById("submit-btn-2").disabled = true;
+        setTimeout(() => {
+          document.getElementById("submit-btn-2").innerHTML = "Submit";
+          document.getElementById("submit-btn-2").disabled = false;
+        }, 1500);
+        const data = {
+          account: "GMAT",
+          firstName: name.value.split(" ")[0],
+          lastName:
+            name.value.split(" ")[1] !== undefined
+              ? name.value.split(" ")[1]
+              : "",
+          email: email.value,
+          phone: phone.value,
+          pageCode: "255",
+          source: source,
+          sourceCode: campaign,
+          website: url,
+          sourceMedium: medium,
+          device: device,
+          term: term,
+          eventMsg: `${
+            name.value.split(" ")[0]
+          } registered from ${url} Website.`,
+        };
+        fetch("https://careerwizard.thecareerlabs.com/ls/api/v1/registration", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+          .then((response) => {
+            console.log(response);
+            localStorage.setItem("lp-form-submission", "success");
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+        //call whatsapp chat api
+        fetch(
+          "https://careerwizard.thecareerlabs.com/verloop/Campaign/SendMessage",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              CampaignID: "b58158c1-19d7-47bb-b325-7b03c6583a45",
+              PhoneNumber: `91${data.phone}`,
+            }),
+          }
+        )
+          .then((response) => {
+            // console.log(response)
+          })
+          .catch((error) => {
+            // console.error("Error:", error);
+          });
+      }
+    </script>
   </body>
 </html>
