@@ -124,6 +124,7 @@ body {
   text-align: center;
   color: #ffffff;
   margin: 20px;
+  position: relative;
 }
 .package_container {
   display: flex;
@@ -156,6 +157,7 @@ body {
   text-align: center;
   color: #726d6d;
   margin-bottom: 20px;
+  height: 80px;
 }
 .position {
   font-style: normal;
@@ -570,6 +572,7 @@ body {
   }
   .program_skill {
     font-size: 10px;
+    height: unset;
   }
   .skills {
     font-size: 10px;
