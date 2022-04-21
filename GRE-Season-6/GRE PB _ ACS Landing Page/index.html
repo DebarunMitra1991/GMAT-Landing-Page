@@ -259,7 +259,7 @@
             let experience = document.getElementById(e.target[1].attributes['id'].nodeValue).value;
             let data = {
                 account: 'GRE',
-                firstName:param.get("firstName"),
+                firstName:param.get("firstName").split(" ")[0]?param.get("firstName").split(" ")[0]:param.get("firstName"),
                 email:param.get("email"),
                 phone: phone,
                 workExperience: experience,
@@ -277,7 +277,7 @@
               experience !== '' &&
               checkPhone(phone) 
             ) {
-            //   console.log(data);
+              console.log(data);
             if(e.target.id === 'reg-form'){
                 document.getElementById("submit-btn-1").innerHTML = "Submitting...";
                 document.getElementById("submit-btn-1").disabled = true;
@@ -285,7 +285,7 @@
                 document.getElementById("submit-btn-2").innerHTML = "Submitting...";
                 document.getElementById("submit-btn-2").disabled = true;
             }
-              greLsRegistration('https://stage-careerwizard.thecareerlabs.com/ls/api/v1/registration', data);
+              //greLsRegistration('https://stage-careerwizard.thecareerlabs.com/ls/api/v1/registration', data);
             //   window.open("https://thecareerlabs.com/byjus-gmat-whatsapp-subscription", "_self")
             } else {
               let errorMsgElementId=e.target.children[4].attributes['id'].nodeValue;
