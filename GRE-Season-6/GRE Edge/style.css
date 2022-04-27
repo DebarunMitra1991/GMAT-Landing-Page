@@ -1,12 +1,11 @@
 * {
-  /* box-sizing: border-box; */
-  overflow-x: hidden;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 body {
   margin: 0;
   padding: 0;
   max-width: fit-content;
-  font-family: "Poppins";
 }
 .logo-section {
   width: 100%;
@@ -17,7 +16,7 @@ body {
   padding-bottom: 5px;
 }
 .container {
-  background-image: url("https://dsxfv1fxcymhz.cloudfront.net/GRE/Edge-April-2022/banner-bg.png");
+  background-image: url('https://dsxfv1fxcymhz.cloudfront.net/GRE/Edge-April-2022/banner-bg-new.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-color: rgba(79, 53, 242, 0.9);
@@ -68,7 +67,7 @@ body {
 }
 .map-img {
   width: 60%;
-  padding-top: 0px;
+  padding-top: 0;
 }
 .dream {
   display: block;
@@ -77,9 +76,9 @@ body {
   padding-bottom: 80px;
 }
 .dream-text {
-  background-color: #ffffff;
+  background-color: #fff;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #4f35f2;
   width: 80%;
   height: 54px;
@@ -87,9 +86,9 @@ body {
   vertical-align: middle;
   position: relative;
   top: -1.8rem;
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  padding: 0.5rem 0px;
+  padding: 0.5rem 0;
 }
 .dream-img {
   padding-top: 20px;
@@ -98,17 +97,16 @@ body {
   width: 100%;
   height: 60%;
 }
-
 .submit-btn {
   height: 60px;
   width: 318px;
   font-size: 1.3rem;
   font-family: "Poppins";
-  font-weight: bold;
+  font-weight: 700;
   color: #fff;
   background-color: #4d6fe7;
   border: 4px solid #e5e5e5;
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 .recipe {
@@ -119,9 +117,9 @@ body {
   justify-content: center;
 }
 .recipe-heading {
-  background-color: #ffffff;
+  background-color: #fff;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #4f35f2;
   width: 500px;
   height: 54px;
@@ -129,7 +127,7 @@ body {
   vertical-align: middle;
   position: relative;
   margin-top: -70px;
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 10px 0 0 0;
 }
@@ -139,7 +137,7 @@ body {
 }
 .gre-content {
   font-size: 1.2rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #4f35f2;
 }
 .hours-img {
@@ -152,9 +150,9 @@ body {
   padding-bottom: 100px;
 }
 .byjus-heading {
-  background-color: #ffffff;
+  background-color: #fff;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #4f35f2;
   width: 700px;
   height: 54px;
@@ -162,14 +160,14 @@ body {
   vertical-align: middle;
   position: relative;
   top: -2rem;
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 0.5rem 0;
 }
 .byjus-subheading {
   text-align: center;
   color: #3e3c3c;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.2rem;
   line-height: 45px;
 }
@@ -193,9 +191,9 @@ body {
   width: 25rem;
   margin-right: 10px;
   margin-left: 10px;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 3px solid #eeebff;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
 }
 .card-img {
@@ -204,7 +202,7 @@ body {
 .card-heading {
   font-size: 1.5rem;
   color: #474747;
-  font-weight: bold;
+  font-weight: 700;
 }
 .info-card-text {
   font-size: 1rem;
@@ -214,9 +212,9 @@ body {
   text-align: center;
 }
 .standout-heading {
-  background-color: #ffffff;
+  background-color: #fff;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #4f35f2;
   width: 650px;
   height: 54px;
@@ -225,14 +223,14 @@ body {
   position: relative;
   margin-bottom: 30px;
   margin-top: -30px;
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 10px 0 0 0;
 }
 .standout-subheading {
   font-size: 1.5rem;
   color: #656565;
-  font-weight: bold;
+  font-weight: 700;
 }
 .levels {
   display: flex;
@@ -253,9 +251,9 @@ body {
   padding-bottom: 8%;
 }
 .testimonial-section-heading {
-  background-color: #ffffff;
+  background-color: #fff;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #4f35f2;
   width: 500px;
   height: 54px;
@@ -263,14 +261,14 @@ body {
   top: -2.5rem;
   display: inline-flex;
   flex-direction: column;
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 0.5rem 0;
 }
 .testimonial-section-subheading {
   text-align: center;
   color: #3e3c3c;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 1.5rem;
   line-height: 45px;
   padding-bottom: 50px;
@@ -282,12 +280,12 @@ body {
   justify-content: space-around;
   padding-right: 5px !important;
   padding-left: 5px !important;
-  background-color: #ffffff;
+  background-color: #fff;
   padding-bottom: 20px;
   width: 400px;
   height: 50%;
   box-shadow: 2px 2px 5px #00000026;
-  border: #ffffff 4px;
+  border: #fff 4px;
   border-style: solid;
   border-radius: 10px;
   margin-right: 5px;
@@ -295,7 +293,7 @@ body {
 }
 .user-img {
   height: 150px;
-  border: solid 4px #ffffff;
+  border: solid 4px #fff;
   border-radius: 50%;
   box-shadow: 2px 2px 5px #00000026;
   margin-top: -15%;
@@ -306,7 +304,7 @@ body {
   color: #4d6fe7;
 }
 .user-score {
-  font-weight: bold;
+  font-weight: 700;
   color: #4d6fe7;
 }
 .para5 {
@@ -328,13 +326,13 @@ body {
 }
 .form-section {
   text-align: center;
-  background-color: #ffffff;
+  background-color: #fff;
   padding-bottom: 50px;
 }
 .form-section-heading-style {
-  background-color: #ffffff;
+  background-color: #fff;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #4f35f2;
   width: 700px;
   height: 54px;
@@ -342,7 +340,7 @@ body {
   vertical-align: middle;
   position: relative;
   top: -1.5rem;
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
   padding: 10px 0 0 0;
 }
@@ -369,11 +367,11 @@ body {
   height: 60px;
   width: 318px;
   font-size: 1.5rem;
-  font-weight: bold;
+  font-weight: 700;
   color: #fff;
   background-color: #4d6fe7;
   border: 4px solid #e5e5e5;
-  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
 .footer-section {
@@ -382,7 +380,6 @@ body {
   color: #fff;
   padding: 1px 0;
 }
-
 @media (max-width: 500px) {
   .logo-section img {
     width: 50%;
@@ -463,7 +460,7 @@ body {
   .byjus-subheading {
     text-align: center;
     color: #3e3c3c;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.2rem;
     line-height: 30px;
     padding-left: 10px;
@@ -516,7 +513,7 @@ body {
   .standout-subheading {
     text-align: center;
     color: #656565;
-    font-weight: bold;
+    font-weight: 700;
     font-size: 1.2rem;
     line-height: 30px;
     padding-left: 10px;
@@ -585,7 +582,6 @@ body {
     height: 50%;
   }
 }
-
 @media (max-width: 900px) {
   .logo-section {
     width: 100%;
