@@ -41,6 +41,57 @@
 
       gtag("config", "UA-141893014-1");
     </script>
+	<script>
+        var mainPageFormSubmit = localStorage.getItem("lp-form-submission");
+        const params = new URLSearchParams(window.location.search);
+        const urlData = {
+                account: 'GMAT',
+                firstName:param.get("firstName").split(" ")?param.get("firstName").split(" ")[0]:param.get("firstName"),
+                phone: params.get("phone"),
+                email:params.get("email"),
+                pageCode: '255',
+                city:params.get("city"),
+                source: params.get("source"),
+                sourceCode: params.get("campaign"),
+                website: `${params.get("url").split('?')[0]}?utm_source=${params.get('source')}&utm_campaign=${params.get('campaign')}&utm_medium=${params.get('medium')}&utm_term=${params.get('term')}&utm_device=${params.get('device')}`,
+                sourceMedium: params.get("medium"),
+                device: params.get("device"),
+                term: params.get("term"),
+                eventMsg:`viewed ${params.get("url").split('?')[0]}?utm_source=${params.get('source')}&utm_campaign=${params.get('campaign')}&utm_medium=${params.get('medium')}&utm_term=${params.get('term')}&utm_device=${params.get('device')} and submitted form`
+                };
+      if(mainPageFormSubmit!='success'){
+        fetch('https://careerwizard.thecareerlabs.com/ls/api/v1/registration', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify(urlData),
+          })
+            .then((response) => {
+              
+              localStorage.setItem("lp-form-submission", 'success');
+            })
+            .catch((error) => {
+              console.error('Error:', error);
+            });
+            fetch("https://careerwizard.thecareerlabs.com/verloop/Campaign/SendMessage", {
+                method: "POST",
+                headers: {
+                  "Content-Type": "application/json",
+                },
+                body: JSON.stringify({
+                  "CampaignID": "b58158c1-19d7-47bb-b325-7b03c6583a45",
+                  "PhoneNumber": `91${urlData.phone}`
+                }),
+              })
+                .then((response) => {
+                  console.log(response)
+                })
+                .catch((error) => {
+                  console.error("Error:", error);
+                });
+      }
+           </script>
     <title>BYJUS'S GMAT ThankYou</title>
     <style>
       *{box-sizing:border-box}.hide{display:none}.show{display:block}body{margin:0;padding:0;font-family:"Poppins"}.logo-section{width:100%;height:100px;text-align:center}.logo-section img{padding:5px 0}.banner-heading{height:4rem}.banner-section{text-align:center;background-color:#f3f1ff;padding:50px 0}.banner-para{font-size:1.5rem;color:#656565;font-weight:500;margin-top:-3px}.banner-heading-2{margin:14px}.banner-para-2{font-size:1.4rem;color:#656565;font-weight:bolder;margin-top:-15px}.banner-text-box{border:3px solid #656565;width:1000px;margin:0 auto}.text-box-text{font-size:2.2rem;color:#4f35f2;font-weight:700;margin:0}.form-section{text-align:center;padding:30px 0 50px 0}.form-section-para{font-size:1.4rem;color:#656565}.form-card-section{display:flex;flex-direction:column;width:600px;margin:0 auto;padding:30px 50px;border:1px solid #4f35f2;box-shadow:0 8px 10px rgba(0,0,0,.7);text-align:start}.phone-number,.work-experience{margin:10px 0;font-size:1.3rem}.input-box{height:40px;font-size:1.2rem;padding:5px;margin:10px 0 30px 0}.submit-btn{width:200px;font-size:1.3rem;font-weight:700;margin:20px auto;padding:10px;background-color:#4f35f2;color:#f3f1ff;border:0;border-radius:5px;box-shadow:0 8px 10px rgba(0,0,0,.7)}.profile-building-section{text-align:center;background-color:#f3f1ff;padding:10px 0 80px 0}.heading-container{background-color:#fff;box-shadow:0 0 4px rgba(79,53,242,.2);border-radius:10px;width:1220px;margin:0 auto}.profile-building-heading{font-size:2.3rem;color:#4f35f2;font-weight:bolder}.profile-building-para{font-size:1.2rem;color:#656565;padding:0 70px}.profile-building-heading-2{font-size:2.3rem;color:#4f35f2;font-weight:bolder;margin:80px 0}.profile-card-section{display:flex;flex-wrap:wrap;column-gap:140px;row-gap:50px;justify-content:center}.admission-section{text-align:center;padding:30px 0 50px 0}.admission-section-heading{font-size:2.5rem;font-weight:bolder;color:#4f35f2}.admission-section-para{font-size:1.5rem;color:#656565;margin-bottom:80px}.admission-card-section{display:flex;flex-wrap:wrap;column-gap:80px;row-gap:80px;justify-content:center}.form-section-last{text-align:center;padding:10px 0 50px 0;background-color:#f3f1ff}.form-section-heading{font-size:3rem;color:#4f35f2;font-weight:bolder}.collage-desktop-img{width:90%;margin-bottom:20px}.collage-mobile-img{visibility:hidden;height:0}.footer-section{background-color:#4f35f2;text-align:center;color:#fff;padding:1px 0}@media (max-width:1070px){.logo-section{height:60px}.logo-section img{height:50px;margin:5px 0 5px 0}.banner-section{padding:20px 0}.banner-heading{height:2.5rem;width:22rem}.banner-para{font-size:.9rem}.b-school-text{height:3.5rem;width:20rem}.banner-heading-2{height:42px;width:80%}.banner-para-2{font-size:1rem;margin-top:-5px}.banner-text-box{width:90%}.text-box-text{font-size:.8rem}.form-section-para{font-size:1.2rem;margin:10px 10px 30px 10px}.form-card-section{width:90%;padding:40px 35px 20px 35px}.phone-number,.work-experience{font-size:1.1rem;margin:0}.input-box{height:30px;font-size:1rem}.heading-container{width:95%}.profile-building-heading{font-size:1rem}.profile-building-para{font-size:.9rem;padding:0 10px}.profile-building-heading-2{font-size:1.1rem;margin:40px 5px}.profile-card-section{justify-content:space-around;column-gap:0;row-gap:20px}.card-img{width:8rem;height:8rem}.admission-section-heading{font-size:1.3rem}.admission-section-para{font-size:1rem;margin-bottom:50px}.admission-card-section{justify-content:space-around;column-gap:10px;row-gap:20px}.admission-card-img{height:80px;width:80px}.form-section-heading{font-size:1.8rem}.collage-desktop-img{visibility:hidden;height:0;margin-bottom:0}.collage-mobile-img{visibility:visible;height:90px;margin-top:-30px}}@media (min-width:700px) and (max-width:1024px){.banner-text-box{width:60%}.banner-heading{width:60%}.b-school-text{height:3.5rem;width:20rem}.banner-heading-2{width:60%}.text-box-text{font-size:1rem}.form-card-section{width:600px}.heading-container{width:80%}.profile-building-heading{font-size:1.4rem}.profile-building-para{font-size:1.2rem;padding:0 40px}.profile-card-section{justify-content:center;column-gap:80px;row-gap:50px}.card-img{height:6rem;width:6rem}.admission-section-heading{font-size:1.6rem}.admission-section-para{font-size:1.3rem;margin-bottom:50px}.admission-card-section{justify-content:center;column-gap:20px;row-gap:40px}.admission-card-img{height:220px;width:220px}.collage-desktop-img{visibility:visible;height:70px;width:90%;margin-bottom:20px}.collage-mobile-img{visibility:hidden;height:0}}
@@ -85,7 +136,7 @@
         We shall connect with you on WhatsApp to provide some Free Video
         Lectures for your preparation:
       </p>
-      <form class="form-card-section" id="reg-form" action="https://web-in21.mxradon.com/t/FormTracker.aspx" onsubmit="handleOnSubmit(event);" name="FORM 0" method="post" enctype="multipart/form-data">
+      <form class="form-card-section" id="reg-form" onsubmit="handleOnSubmit(event);" name="FORM 0" >
         <label for="" class="phone-number">Phone Number</label>
         <input
           type="number"
@@ -103,8 +154,8 @@
           <option value="7 to 10 Years">7 to 10 Years</option>
           <option value="10+ Years">10+ Years</option>
         </select>
-        <p class="hide" id="form1error"></p>
-        <input id="submit-btn-1" type="submit" value="START MY PREP" class="submit-btn" />
+        <div class="hide" id="form1error"></div>
+        <input id="submit-button" type="submit" value="START MY PREP" class="submit-btn" />
         <input type="hidden" name="MXHOrgCode" value="24696"><input type="hidden" name="MXHLandingPageId" value="1d2bace6-eace-11eb-b796-02612e94b82c"><input type="hidden" name="MXHFormBehaviour" value="1"><input type="hidden" name="MXHOutputMessagePosition" value="0"><input type="hidden" name="MXHFormDataTransfer" value="0"><input type="hidden" name="MXHRedirectUrl" value="https://thecareerlabs.com/byjus-gmat-whatsapp-subscription"><input type="hidden" name="MXHAsc" value="5"><input type="hidden" name="MXHFormName" value="FORM 0"><input type="hidden" name="MXHSecretKey" value=""></form>
       </form>
     </div>
@@ -242,7 +293,7 @@
         We shall connect with you on WhatsApp to provide some Free Video
         Lectures for your preparation:
       </p>
-      <form class="form-card-section" id="reg-form-2" action="https://web-in21.mxradon.com/t/FormTracker.aspx" onsubmit="handleOnSubmit(event);" name="FORM 1" method="post" enctype="multipart/form-data">
+      <form class="form-card-section" id="reg-form-2" onsubmit="handleOnSubmit(event);" name="FORM 1">
         <label for="" class="phone-number">Phone Number</label>
         <input
           type="number"
@@ -260,8 +311,8 @@
           <option value="7 to 10 Years">7 to 10 Years</option>
           <option value="10+ Years">10+ Years</option>
         </select>
-        <p class="hide" id="form2error"></p>
-        <input id="submit-btn-2" type="submit" value="START MY PREP" class="submit-btn" />
+        <div class="hide" id="form2error"></div>
+        <input id="submit-button-2" type="submit" value="START MY PREP" class="submit-btn" />
         <input type="hidden" name="MXHOrgCode" value="24696"><input type="hidden" name="MXHLandingPageId" value="1d2bace6-eace-11eb-b796-02612e94b82c"><input type="hidden" name="MXHFormBehaviour" value="1"><input type="hidden" name="MXHOutputMessagePosition" value="0"><input type="hidden" name="MXHFormDataTransfer" value="0"><input type="hidden" name="MXHRedirectUrl" value="https://thecareerlabs.com/byjus-gmat-whatsapp-subscription"><input type="hidden" name="MXHAsc" value="5"><input type="hidden" name="MXHFormName" value="FORM 0"><input type="hidden" name="MXHSecretKey" value=""></form>
       </form>
     </div>
@@ -292,6 +343,7 @@
             })
               .then((response) => {
                 console.log('Data sent successfully');
+                window.open("https://thecareerlabs.com/byjus-gmat-whatsapp-subscription", "_self")
               })
               .catch((error) => {
                 console.error('Error:', error);
@@ -303,10 +355,10 @@
           let experience = document.getElementById(e.target[1].attributes['id'].nodeValue).value;
           let data = {
               account: 'GMAT',
-              firstName:param.get("firstName"),
+              firstName:param.get("firstName").split(" ")?param.get("firstName").split(" ")[0]:param.get("firstName"),
               email:param.get("email"),
               phone: phone,
-              workExperience: experience,
+              monthOfWorkExperience: experience,
               pageCode: '266',
               source: param.get("source"),
               sourceCode: param.get("campaign"),
@@ -314,16 +366,22 @@
               sourceMedium: param.get("medium"),
               device: param.get("device"),
               term: param.get("term"),
-              eventMsg:`viewed ${window.location.href} and submitted form`,
+              eventMsg:`viewed https://gmatprep.byjus.com/byjus-gmat-thank-you and submitted form`,
             };
             if (
             phone !== '' &&
             experience !== '' &&
             checkPhone(phone) 
           ) {
-            console.log(data);
+            // console.log(data);
+            if(e.target.id === "reg-form"){
+                document.getElementById('submit-button').innerHTML = 'Submitting...';
+                document.getElementById('submit-button').disabled = true;
+            }else if(e.target.id === "reg-form-2"){
+                document.getElementById('submit-button-2').innerHTML = 'Submitting...';
+                document.getElementById('submit-button-2').disabled = true;
+            }
             gmatLsRegistration('https://careerwizard.thecareerlabs.com/ls/api/v1/registration', data);
-            window.open("https://thecareerlabs.com/byjus-gmat-whatsapp-subscription", "_self")
           } else {
             let errorMsgElementId=e.target.children[4].attributes['id'].nodeValue;
             document.getElementById(errorMsgElementId).className = 'show';
@@ -336,10 +394,5 @@
           }
       }
     </script>
-  <script type="text/javascript"> var MXLandingPageId = '1d2bace6-eace-11eb-b796-02612e94b82c'; </script> <!--LeadSquared Tracking Code Start-->
-<script type="text/javascript" src="https://web-in21.mxradon.com/t/Tracker.js"></script>
-<script type="text/javascript">
-      pidTracker('24696');
-</script>
   </body>
 </html>

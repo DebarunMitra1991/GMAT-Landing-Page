@@ -46,7 +46,7 @@
         const params = new URLSearchParams(window.location.search);
         const urlData = {
                 account: 'GMAT',
-                firstName:params.get("firstName"),
+                firstName:param.get("firstName").split(" ")?param.get("firstName").split(" ")[0]:param.get("firstName"),
                 phone: params.get("phone"),
                 email:params.get("email"),
                 pageCode: '255',
@@ -170,8 +170,7 @@
           <option value="10+ Years">10+ Years</option>
         </select>
         <div class="hide" id="form1error"></div>
-        <input id="submit-btn-1" type="submit" value="START MY PREP" class="submit-btn" />
-        <input type="hidden" name="MXHOrgCode" value="24696"><input type="hidden" name="MXHLandingPageId" value="1d2bace6-eace-11eb-b796-02612e94b82c"><input type="hidden" name="MXHFormBehaviour" value="1"><input type="hidden" name="MXHOutputMessagePosition" value="0"><input type="hidden" name="MXHFormDataTransfer" value="0"><input type="hidden" name="MXHRedirectUrl" value="https://thecareerlabs.com/byjus-gmat-whatsapp-subscription"><input type="hidden" name="MXHAsc" value="5"><input type="hidden" name="MXHFormName" value="FORM 0"><input type="hidden" name="MXHSecretKey" value=""></form>
+        <input id="submit-button" type="submit" value="START MY PREP" class="submit-btn" />
       </form>
     </div>
 
@@ -327,8 +326,7 @@
           <option value="10+ Years">10+ Years</option>
         </select>
         <div class="hide" id="form2error"></div>
-        <input id="submit-btn-2" type="submit" value="START MY PREP" class="submit-btn" />
-        <input type="hidden" name="MXHOrgCode" value="24696"><input type="hidden" name="MXHLandingPageId" value="1d2bace6-eace-11eb-b796-02612e94b82c"><input type="hidden" name="MXHFormBehaviour" value="1"><input type="hidden" name="MXHOutputMessagePosition" value="0"><input type="hidden" name="MXHFormDataTransfer" value="0"><input type="hidden" name="MXHRedirectUrl" value="https://thecareerlabs.com/byjus-gmat-whatsapp-subscription"><input type="hidden" name="MXHAsc" value="5"><input type="hidden" name="MXHFormName" value="FORM 0"><input type="hidden" name="MXHSecretKey" value=""></form>
+        <input id="submit-button-2" type="submit" value="START MY PREP" class="submit-btn" />
       </form>
     </div>
 
@@ -365,6 +363,7 @@
             })
               .then((response) => {
                 console.log('Data sent successfully');
+                window.open("https://thecareerlabs.com/byjus-gmat-whatsapp-subscription", "_self")
               })
               .catch((error) => {
                 console.error('Error:', error);
@@ -377,10 +376,10 @@
           let experience = document.getElementById(e.target[1].attributes['id'].nodeValue).value;
           let data = {
               account: 'GMAT',
-              firstName:param.get("firstName"),
+              firstName:param.get("firstName").split(" ")?param.get("firstName").split(" ")[0]:param.get("firstName"),
               email:param.get("email"),
               phone: phone,
-              workExperience: experience,
+              monthOfWorkExperience: experience,
               pageCode: '266',
               source: param.get("source"),
               sourceCode: param.get("campaign"),
@@ -395,9 +394,15 @@
             experience !== '' &&
             checkPhone(phone) 
           ) {
-            console.log(data);
+            if(e.target.id === "reg-form"){
+                document.getElementById('submit-button').innerHTML = 'Submitting...';
+                document.getElementById('submit-button').disabled = true;
+            }else if(e.target.id === "reg-form-2"){
+                document.getElementById('submit-button-2').innerHTML = 'Submitting...';
+                document.getElementById('submit-button-2').disabled = true;
+            }
             gmatLsRegistration('https://careerwizard.thecareerlabs.com/ls/api/v1/registration', data);
-            window.open("https://thecareerlabs.com/byjus-gmat-whatsapp-subscription", "_self")
+            
           } else {
             let errorMsgElementId=e.target.children[4].attributes['id'].nodeValue;
             document.getElementById(errorMsgElementId).className = 'show';
