@@ -344,6 +344,8 @@
         document.getElementById("partnerTags").innerHTML = `<img src="https://trk.opiclepxl.com/pixel?adid=62318a1fc3b5a41bc81e5575&sub1=${emailValue}">`;
       }else if(utmSource === "Affiliate-Affle"){
         document.getElementById("partnerTags").innerHTML = `<iframe src=https://cost.affcost.com/pixel?adid=6242f52bbe9ea250c7245dee&txn_id=${emailValue} scrolling="no" frameborder="0" width="1" height="1"></iframe>`;
+      }else if(utmSource ==="icubeswire"){
+        document.getElementById("partnerTags").innerHTML = `<iframe src='https://tracking.icubeswire.co/aff_a?offer_id=3033&adv_sub1=${emailValue} width='1' height='1' id='pixelcodeurl' /></iframe>`;
       }
       // else if(utmSource ==="Taboola"){
       //   document.getElementsByTagName("header").innerHTML = taboolaScript;
@@ -415,12 +417,5 @@
           }
       }
     </script>
-  <script type="text/javascript"> var MXLandingPageId = '1d2bace6-eace-11eb-b796-02612e94b82c'; </script> 
-<!--LeadSquared Tracking Code Start-->
-<script type="text/javascript" src="https://web-in21.mxradon.com/t/Tracker.js"></script>
-<script type="text/javascript">
-      pidTracker('24696');
-</script>
-<!--LeadSquared Tracking Code End-->
   </body>
 </html>
