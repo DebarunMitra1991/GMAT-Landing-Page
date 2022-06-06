@@ -1,0 +1,613 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+}
+
+.banner_section img {
+  width: 100%;
+  z-index: 1;
+}
+
+.footer {
+  background-color: #855EFF;
+  height: 105px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer_text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  color: #ffffff;
+}
+
+.section_2 {
+  background-color: #ffffff;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.text_para {
+  
+  font-size: 22px;
+  text-align: justify;
+  color: #818181;
+}
+
+.paragraph_heading {
+  
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  color: #818181;
+}
+
+.heading_2 img {
+  width: 80%;
+  align-items: center;
+  margin-left: 100px;
+}
+
+.heading_3 img {
+  width: 80%;
+  align-items: center;
+  margin-left: 100px;
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+
+  .mobile_hide {
+    display: none;
+  }
+}
+
+.Subtext_para {
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  color: #818181;
+
+}
+
+.Group7_img img {
+  width: 100%;
+}
+
+.img-coloumn {
+  display: flex;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left_img {
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-left_img img {
+  width: 90%;
+}
+
+.flex-item-right_text {
+  padding: 15px;
+  flex: 50%;
+  
+  font-size: 22px;
+  text-align: justify;
+  /* line-height: 36px; */
+  color: #818181;
+
+}
+
+.flex-container_2 {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex_right_university_img {
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex_left_universities_text {
+  padding: 15px;
+  flex: 50%;
+  
+  text-align: justify;
+  font-size: 22px;
+  /* line-height: 36px; */
+  color: #818181;
+
+}
+
+.flex_left_Topnotch_text {
+  padding: 15px;
+  flex: 50%;
+  
+  text-align: justify;
+  font-size: 22px;
+  /* line-height: 36px; */
+  color: #818181;
+}
+
+.flex_right_Topnotch_img img {
+  padding: 10px;
+  flex: 50%;
+}
+
+.collageName_list ol li {
+  text-align: justify;
+  font-size: 20px;
+}
+
+@media (max-width: 800px) {
+  .text_para {
+    font-size: 13px;
+  }
+
+  .heading-1 img {
+    width: 80%;
+    margin-left: 27px;
+  }
+
+  .heading-3 img {
+    width: 80%;
+
+  }
+
+  #hidden-mobile {
+    display: none;
+  }
+
+  .SuccessFullAdmit {
+    font-size: 15px !important;
+    text-align: center;
+  }
+
+  .Subtext_para {
+    font-size: 15px;
+  }
+
+  .paragraph_heading {
+    font-size: 17px;
+  }
+
+  .flex-container {
+    flex-direction: column;
+  }
+
+  .flex-item-left_img img {
+    width: 90%;
+  }
+
+  .flex-item-right_text {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .flex-container_2 {
+    flex-direction: column;
+  }
+
+  .flex_right_university_img img {
+    width: 90%;
+
+  }
+
+  .flex_left_universities_text {
+    font-size: 15px;
+    text-align: justify;
+
+  }
+
+  .collageName_list ol li {
+    font-size: 15px;
+
+  }
+
+  .left {
+    font-size: 15px;
+  }
+
+  .right {
+    font-size: 15px;
+  }
+}
+
+.Profile_heading {
+  
+  font-weight: 600;
+  font-size: 30px;
+  color: #7A57E9;
+}
+
+.Profile_heading_text {
+  
+  font-size: 22px;
+  color: #8A8A8A;
+}
+
+/* Form*/
+.Register_form_text {
+  
+  font-size: 22px;
+  color: #8A8A8A;
+}
+
+.setOf_fields {
+  display: flex;
+  justify-content: space-between;
+}
+
+.setOf_fields_sec {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form_fields {
+  background: #ffffff;
+  border: 2px solid #3e3c3cd7;
+  box-sizing: border-box;
+  color: #646363;
+  font-weight: 400;
+  font-size: 22px;
+  padding: 10px;
+  margin-bottom: 30px;
+  width: 350px;
+}
+
+.applyNow_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.applynowbtn {
+  background: #4f35f2;
+  border: 4px solid #ffffff;
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  padding: 10px 50px;
+  cursor: pointer;
+}
+
+.applynowbtn a {
+  font-weight: 700;
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .text_para {
+    font-size: 15px;
+  }
+
+  .heading_2 img {
+    width: 80%;
+    align-items: center;
+    margin-left: 100px;
+  }
+
+  .heading_3 img {
+    width: 80%;
+    align-items: center;
+    margin-left: 100px;
+  }
+
+  .Subtext_para {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .paragraph_heading {
+    font-size: 17px;
+  }
+
+  .setOf_fields_sec {
+    flex-direction: column;
+  }
+
+  .mobile_hide {
+    display: none;
+  }
+
+  .Profile_heading {
+    
+    font-size: 17px;
+
+  }
+
+  .Profile_heading_text {
+    font-size: 15px;
+    color: #8A8A8A;
+    
+    text-align: justify;
+  }
+
+  .SuccessFullAdmit {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .setOf_fields {
+    flex-direction: column;
+  }
+
+  .form_fields {
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .text_para {
+    font-size: 15px;
+  }
+
+  .heading_2 img {
+    width: 85%;
+    align-items: center;
+    margin-left: 25px;
+  }
+
+  .SuccessFullAdmit {
+    font-size: 15px;
+  }
+
+  .container_1 {
+    display: flex;
+    gap: 1rem;
+    border: 3px solid #855EFF;
+    padding: 25px;
+  }
+
+  .heading_3 img {
+    width: 85%;
+    align-items: center;
+    margin-left: 25px;
+  }
+
+  .Subtext_para {
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  .paragraph_heading {
+    font-size: 17px;
+  }
+
+  .footer_text {
+    font-size: 10px;
+  }
+
+  .footer {
+    height: 80px;
+  }
+
+  .header {
+    height: 80px;
+  }
+
+  .header img {
+    width: 40%;
+  }
+
+  .form_section {
+    padding-top: 20px;
+  }
+
+  .setOf_fields {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  .form_fields {
+    width: 100%;
+    font-size: 14px;
+    border: 1px solid #3e3c3cd7;
+  }
+
+  .setOf_fields_sec {
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+  }
+
+  .applynowbtn {
+    font-size: 12px;
+  }
+
+  .flex-container_img {
+    width: 10%;
+  }
+}
+
+.flex-container_img {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-container_img>div {
+  /* width: 100px; */
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.container_1 {
+  display: flex;
+  gap: 3rem;
+  border: 3px solid #855EFF;
+  padding: 25px;
+}
+
+.box:nth-child(1) {
+  flex: 4;
+  color: #8A8A8A;
+  font-size: 14px;
+}
+
+.box:nth-child(2) {
+  flex: 4;
+  color: #8A8A8A;
+  font-size: 14px;
+}
+
+.box:nth-child(3) {
+  flex: 4;
+  color: #8A8A8A;
+  font-size: 14px;
+}
+
+#box_alignItem {
+  background-color: #855EFF;
+  text-align: center;
+  width: 250px;
+  height: 46px;
+  padding-top: 10px;
+  color: #ffffff;
+  font-weight: bold;
+
+}
+
+.leftcolums {
+  float: left;
+  font-size: 30px;
+  font-weight: bold;
+  color: #855EFF;
+}
+
+.rightcolums {
+  font-size: 30px;
+  float: right;
+  font-weight: bold;
+  color: #855EFF;
+
+}
+
+.SuccessFullAdmit {
+  
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  text-align: center;
+  /* line-height: 36px;   */
+  color: #8A8A8A;
+
+}
+
+@media (max-width: 500px) {
+  .section-split {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .section-split div {
+    font-family: "Poppins";
+    font-size: 13px !important;
+    font-weight: 600;
+    color: #855EFF;
+  }
+
+  .para,
+  .para-left {
+    font-size: 14px !important;
+    margin-left: 8px;
+
+  }
+
+  .splitbtn button {
+    font-size: 14px !important;
+    color: white;
+    border: none;
+    margin-left: 15px !important;
+    padding: 10px;
+    background-color: #855EFF;
+  }
+
+  .Acs_split {
+    float: right;
+  }
+}
+
+.section-split {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section-split div {
+  font-family: "Poppins";
+  font-size: 25px;
+  font-weight: 600;
+  color: #855EFF;
+}
+
+.para,
+.para-left {
+  font-size: 22px;
+  color: #8A8A8A;
+  font-family: "Poppins";
+}
+
+.splitbtn button {
+  font-size: 23px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  padding: 10px;
+  background-color: #855EFF;
+}
+
+.split-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #7A57E9;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.Trainers {
+  margin-left: 1em;
+}
+
+.Assessment {
+  margin-left: 2em;
+}
